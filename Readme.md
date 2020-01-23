@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Максим Симаков](https://up.htmlacademy.ru/htmlcss/27/user/1131239).
-* Наставник: `Неизвестно`.
+- Студент: [Максим Симаков](https://up.htmlacademy.ru/htmlcss/27/user/1131239).
+- Наставник: [Андрей Грачев](https://up.htmlacademy.ru/htmlcss/27/user/252055).
 
 ---
 
