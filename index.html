@@ -14,7 +14,7 @@
         <img width="109" height="19" src="img/png/logo_header.png" alt="Логотип техномарта">
       </a>
     </p>
-    <!-- Здесь будет форма -->
+    <input type="search" placeholder="Поиск:">
     <a class='bookmarks' href="#">Закладки:0</a>
     <a class='basket' href="#">Корзина:0</a>
     <a class='order' href="#">Оформить заказ</a>
@@ -265,9 +265,10 @@
         Вы можете забрать товар сами,
         Заехав в наш офис:
       </p>
-      <!-- Здесь будет online карта -->
-      <img width="300" height="158" src="img/png/map.png"
-        alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <a href="#">
+        <img width="300" height="158" src="img/png/map.png"
+          alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </a>
       <a href="#">Заблудились? Напишите нам!</a>
     </section>
 
@@ -317,29 +318,30 @@
   </footer>
 
   <section class='help_window'>
-    <h2 class="visually-hidden">Как нас найти</h2>
+    <h2 class="visually_hidden">Если заблудился</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
-      <p class="lost-item">
-        <label for="lost-name">Ваше имя:</label>
-        <input type="text" name="name" id="lost-name" placeholder="Имя Фамилия">
+      <p class="lost_item">
+        <label for="lost_name">Ваше имя:</label>
+        <input type="text" name="name" id="lost_name" placeholder="Имя Фамилия">
       </p>
-      <p class="lost-item">
-        <label for="lost-email">Ваш e-mail:</label>
-        <input type="email" name="email" id="lost-email" placeholder="email@example.com">
+      <p class="lost_item">
+        <label for="lost_email">Ваш e-mail:</label>
+        <input type="email" name="email" id="lost_email" placeholder="email@example.com">
       </p>
-      <p class="lost-item">
-        <label for="lost-text">Текст письма:</label>
-        <textarea name="text" id="lost-text" placeholder="В свободной форме"></textarea>
+      <p class="lost_item">
+        <label for="lost_text">Текст письма:</label>
+        <textarea name="text" id="lost_text" placeholder="В свободной форме"></textarea>
       </p>
       <button type="submit">Отправить</button>
     </form>
-    <button type="button">Закрыть</button>
+    <button type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="big_map">
-    <img width="970" height="476" src="img/png/big_map.png"
-      alt="Большая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    <button type="button">Закрыть</button>
+    <h2 class='visually_hidden'>Как до нас добраться</h2>
+      <img width="970" height="476" src="img/png/big_map.png"
+        alt="Большая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <button type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>

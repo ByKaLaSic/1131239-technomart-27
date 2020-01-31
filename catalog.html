@@ -14,7 +14,7 @@
         <img width="109" height="19" src="img/png/logo_header.png" alt="Логотип техномарта">
       </a>
     </p>
-    <!-- Здесь будет форма -->
+    <input type="search" placeholder="Поиск:">
     <a class='bookmarks' href="#">Закладки:0</a>
     <a class='basket' href="#">Корзина:0</a>
     <a class='order' href="#">Оформить заказ</a>
@@ -58,7 +58,52 @@
 
     <section class='filter'>
       <h2>Фильтр:</h2>
-      <!-- Здесь будет форма -->
+      <form action="https://echo.htmlacademy.ru" method="get" oninput="price_display.value=price_range.value">
+        <fieldset class="price">
+          <legend>Цена:</legend>
+          <input type="range" name="price_range" min="0" max="30000">
+          <output name="price_display"></output>
+        </fieldset>
+        <fieldset class="manufacturers">
+          <legend>Производители:</legend>
+          <ul>
+            <li class="filter_option">
+              <input type="checkbox" name="Bosch" id="filter_bosch" checked>
+              <label for="filter_bosch">Bosch</label>
+            </li>
+            <li class="filter_option">
+              <input type="checkbox" name="Интерскол" id="filter_interskol">
+              <label for="filter_interskol">Интерскол</label>
+            </li>
+            <li class="filter_option">
+              <input type="checkbox" name="Makita" id="filter_makita" checked>
+              <label for="filter_makita">Makita</label>
+            </li>
+            <li class="filter_option">
+              <input type="checkbox" name="Dewalf" id="filter_dewalf">
+              <label for="filter_dewalf">Dewalf</label>
+            </li>
+            <li class="filter_option">
+              <input type="checkbox" name="Hatachi" id="filter_hatachi">
+              <label for="filter_hatachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="nutrition">
+          <legend>Питание:</legend>
+          <ul>
+            <li class="filter_option">
+              <input type="radio" name="nutrition" id="filter_batteries" checked>
+              <label for="filter_batteries">Аккамуляторы</label>
+            </li>
+            <li class="filter_option">
+              <input type="radio" name="nutrition" id="filter_network">
+              <label for="filter_network">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter-button" type="submit">Показать</button>
+      </form>
     </section>
 
     <section class='hammer_drill_list'>
