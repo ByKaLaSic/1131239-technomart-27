@@ -63,8 +63,15 @@
       <form action="https://echo.htmlacademy.ru" method="get" oninput="price_display.value=price_range.value">
         <fieldset class="price">
           <legend>Цена:</legend>
-          <input type="range" name="price_range" min="0" max="30000">
-          <output name="price_display"></output>
+          <div class="dioposonic_wrapper">
+           <input type="range" name="price_range" min="0" max="30000">
+          </div>
+          <div class="minimum_shell_price">
+            <!-- второй ползунок -->
+          </div>
+          <div class="maximum_shell_price">
+           <output name="price_display"></output>
+          </div>
         </fieldset>
         <fieldset class="manufacturers">
           <legend>Производители:</legend>
