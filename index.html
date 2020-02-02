@@ -4,16 +4,19 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header>
     <p class='header_logo'>
       <a>
-        <img width="109" height="19" src="img/png/logo_header.png" alt="Лого">
+        <img width="109" height="19" src="img/png/logo_header.png" alt="Логотип техномарта">
       </a>
     </p>
-    <!-- Здесь будет форма -->
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <input type="search" placeholder="Поиск:">
+    </form>
     <a class='bookmarks' href="#">Закладки:0</a>
     <a class='basket' href="#">Корзина:0</a>
     <a class='order' href="#">Оформить заказ</a>
@@ -27,8 +30,8 @@
       <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. </span>
     </p>
     <div class='user_unregistered'>
-      <a href='#' type="button">Войти</a>
-      <a href='#' type="button">Регистрация</a>
+      <a href='login.html' type="button">Войти</a>
+      <a href='registration.html' type="button">Регистрация</a>
     </div>
     <nav class='header_nav'>
       <ul class='breadcrumbs_header'>
@@ -43,10 +46,10 @@
     </nav>
   </header>
   <main>
-    <h1>Техномарт</h1>
+    <h1 class="visually-hidden">Техномарт</h1>
 
     <section class='content'>
-      <h2>Контент</h2>
+      <h2 class="visually-hidden">Контент</h2>
       <div class='materials'>
         <h3>Материалы</h3>
         <a href="#">На любой вкус</a>
@@ -63,13 +66,17 @@
       <div class='content_slider'>
         <div class='drill'>
           <h3>Дрели</h3>
-          <img width="620" height="266" src="img/jpg/drill_photo_1.jpg" alt="фото работника">
+          <div>
+            <img width="620" height="266" src="img/jpg/drill_photo_1.jpg" alt="фото работника с дрелью">
+          </div>
           <p>Соседям на радость!</p>
           <a href="catalog.html">Открыть каталог</a>
         </div>
         <div class='hammer_drill'>
           <h3>Перфораторы</h3>
-          <img width="620" height="266" src="img/jpg/drill_photo_2.jpg" alt="фото работника">
+          <div>
+            <img width="620" height="266" src="img/jpg/drill_photo_2.jpg" alt="фото работника с перфоратором">
+          </div>
           <p>Настоящие мужские игрушки</p>
           <a href="catalog.html">Открыть каталог</a>
         </div>
@@ -100,7 +107,8 @@
               BFG 9000
             </a>
           </h3>
-          <img src="img/jpg/product_1.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 9000">
+          <img src="img/jpg/product_1.jpg" width="218" height="170"
+            alt="Фото перфоратора с длинным наконечником. Цвета перфоратора: голубой, серый, чёрный. Мощный">
           <div>
             <a href="#">Купить</a>
             <a href="#">Заказать</a>
@@ -119,7 +127,8 @@
               BFG 3000
             </a>
           </h3>
-          <img src="img/jpg/product_2.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 3000">
+          <img src="img/jpg/product_2.jpg" width="218" height="170"
+            alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
           <div>
             <a href="#">Купить</a>
             <a href="#">Заказать</a>
@@ -138,7 +147,8 @@
               BFG 6000
             </a>
           </h3>
-          <img src="img/jpg/product_3.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 6000">
+          <img src="img/jpg/product_3.jpg" width="218" height="170"
+            alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
           <div>
             <a href="#">Купить</a>
             <a href="#">Заказать</a>
@@ -157,7 +167,8 @@
               BFG 2000
             </a>
           </h3>
-          <img src="img/jpg/product_4.jpg" width="218" height="170" alt="Перфоратор Bosch BFG 2000">
+          <img src="img/jpg/product_4.jpg" width="218" height="170"
+            alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
           <div>
             <a href="#">Купить</a>
             <a href="#">Заказать</a>
@@ -175,14 +186,14 @@
         <a href="#">Все производители</a>
       </div>
       <ul>
-        <li><a href="#"><img width="126" height="37" src="img/jpg/bosch.jpg" alt="Bosch"></a></li>
-        <li><a href="#"><img width="123" height="40" src="img/jpg/makita.jpg" alt="Makita"></a></li>
-        <li><a href="#"><img width="146" height="44" src="img/jpg/dewalt.jpg" alt="DeWALT"></a></li>
-        <li><a href="#"><img width="200" height="88" src="img/jpg/interskol.jpg" alt="Интерскол"></a></li>
-        <li><a href="#"><img width="169" height="31" src="img/jpg/hitachi.jpg" alt="Hitachi"></a></li>
-        <li><a href="#"><img width="121" height="73" src="img/jpg//lg.jpg" alt="LG"></a></li>
-        <li><a href="#"><img width="151" height="96" src="img/jpg/aeg.jpg" alt="AEG"></a></li>
-        <li><a href="#"><img width="204" height="69" src="img/jpg/metabo.jpg" alt="Metabo"></a></li>
+        <li><a href="#"><img width="126" height="37" src="img/jpg/bosch.jpg" alt="Логотип Bosch"></a></li>
+        <li><a href="#"><img width="123" height="40" src="img/jpg/makita.jpg" alt="Логотип Makita"></a></li>
+        <li><a href="#"><img width="146" height="44" src="img/jpg/dewalt.jpg" alt="Логотип DeWALT"></a></li>
+        <li><a href="#"><img width="200" height="88" src="img/jpg/interskol.jpg" alt="Логотип Интерскол"></a></li>
+        <li><a href="#"><img width="169" height="31" src="img/jpg/hitachi.jpg" alt="Логотип Hitachi"></a></li>
+        <li><a href="#"><img width="121" height="73" src="img/jpg//lg.jpg" alt="Логотип LG"></a></li>
+        <li><a href="#"><img width="151" height="96" src="img/jpg/aeg.jpg" alt="Логотип AEG"></a></li>
+        <li><a href="#"><img width="204" height="69" src="img/jpg/metabo.jpg" alt="Логотип Metabo"></a></li>
       </ul>
     </section>
 
@@ -256,8 +267,10 @@
         Вы можете забрать товар сами,
         Заехав в наш офис:
       </p>
-      <!-- Здесь будет карта -->
-      <img width="300" height="158" src="img/png/map.png" alt="карта">
+      <a href="#">
+        <img width="300" height="158" src="img/png/map.png"
+          alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </a>
       <a href="#">Заблудились? Напишите нам!</a>
     </section>
 
@@ -265,7 +278,7 @@
   <footer>
     <p class='footer_logo'>
       <a>
-        <img width="138" height="23" src="img/png/logo_footer.png" alt="Лого">
+        <img width="138" height="23" src="img/png/logo_footer.png" alt="Логотип техномарта">
       </a>
     </p>
     <p class='location_footer'>
@@ -292,9 +305,9 @@
       Все права защищены
     </p>
     <ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#" aria-label="Вконтакте"></a></li>
+      <li><a href="#" aria-label="Фейсбук"></a></li>
+      <li><a href="#" aria-label="Инстаграм"></a></li>
     </ul>
     <p>
       <span>Обратная связь:</span>
@@ -307,10 +320,32 @@
   </footer>
 
   <section class='help_window'>
-    <h2>Заблудились? Напишите нам!</h2>
-    <!--Здесь будет форма -->
-    <button type="button">Закрыть</button>
+    <h2 class="visually_hidden">Если заблудился</h2>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p class="lost_item">
+        <label for="lost_name">Ваше имя:</label>
+        <input type="text" name="name" id="lost_name" placeholder="Имя Фамилия">
+      </p>
+      <p class="lost_item">
+        <label for="lost_email">Ваш e-mail:</label>
+        <input type="email" name="email" id="lost_email" placeholder="email@example.com">
+      </p>
+      <p class="lost_item">
+        <label for="lost_text">Текст письма:</label>
+        <textarea name="text" id="lost_text" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="submit">Отправить</button>
+    </form>
+    <button type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="big_map">
+    <h2 class='visually_hidden'>Как до нас добраться</h2>
+    <img width="970" height="476" src="img/png/big_map.png"
+      alt="Большая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <button type="button" aria-label="Закрыть"></button>
   </section>
 
 </body>
+
 </html>
