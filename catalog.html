@@ -60,17 +60,23 @@
 
     <section class='filter'>
       <h2>Фильтр:</h2>
-      <form action="https://echo.htmlacademy.ru" method="get" oninput="price_display.value=price_range.value">
+      <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="price">
-          <legend>Цена:</legend>
-          <div class="dioposonic_wrapper">
-           <input type="range" name="price_range" min="0" max="30000">
-          </div>
-          <div class="minimum_shell_price">
-            <!-- второй ползунок -->
-          </div>
-          <div class="maximum_shell_price">
-           <output name="price_display"></output>
+          <div class="filter">
+            <div class="filter_range_wrapper">
+              <div class="filter_range">
+                <div class="filter_range_scale">
+                  <div class="filter_range_bar"></div>
+                </div>
+                <button class="filter_range_handle min"></button>
+                <button class="filter_range_handle max"></button>
+              </div>
+            </div>
+
+            <div class="filter_interval">
+              <label>От <input type="text" name="min_interval" value="0"></label>
+              <label>До <input type="text" name="max_interval" value="15000"></label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="manufacturers">
