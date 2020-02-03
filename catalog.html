@@ -61,6 +61,24 @@
     <section class='filter'>
       <h2>Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="price">
+          <div class="filter">
+            <div class="filter_range_wrapper">
+              <div class="filter_range">
+                <div class="filter_range_scale">
+                  <div class="filter_range_bar"></div>
+                </div>
+                <button class="filter_range_handle min"></button>
+                <button class="filter_range_handle max"></button>
+              </div>
+            </div>
+
+            <div class="filter_interval">
+              <label>От <input type="text" name="min_interval" value="0"></label>
+              <label>До <input type="text" name="max_interval" value="15000"></label>
+            </div>
+          </div>
+        </fieldset>
         <fieldset class="manufacturers">
           <legend>Производители:</legend>
           <ul>
@@ -82,7 +100,7 @@
             </li>
             <li class="filter_option">
               <input type="checkbox" name="hitachi" id="filter_hitachi">
-              <label for="filter_hatachi">Hitachi</label>
+              <label for="filter_hitachi">Hitachi</label>
             </li>
           </ul>
         </fieldset>
