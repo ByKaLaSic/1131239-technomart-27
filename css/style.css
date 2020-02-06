@@ -398,6 +398,10 @@ input.search::placeholder {
   text-transform: uppercase;
 }
 
+.hammer_drill_list {
+  list-style: none;
+}
+
 .hammer_drill_item a {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
