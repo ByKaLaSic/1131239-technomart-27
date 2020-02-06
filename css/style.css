@@ -10,6 +10,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  color: #000000
 }
 
 a {
@@ -34,17 +35,26 @@ img {
   background-color: #ee3643;
 }
 
-.order {
-  background-color: #63a63e;
+input.search {
+  background-color: #293449;
+  border: none;
+  color: #ffffff;
 }
 
-.order:hover,
-.order:focus {
-  background-color: #65b334;
+input.search:hover,
+input.search:focus {
+  background-color: #212a3a;
 }
 
-.order:active {
-  background-color: #518534;
+input.search::placeholder {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.bookmarks,
+.basket {
+  color: #293449;
 }
 
 .bookmarks:hover,
@@ -59,40 +69,17 @@ img {
   background-color: #161d29;
 }
 
-.entrance,
-.exit {
-  background-color: #ffffff;
+.order {
+  background-color: #63a63e;
 }
 
-.user_unregistered a {
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
+.order:hover,
+.order:focus {
+  background-color: #65b334;
 }
 
-.entrance:hover,
-.exit:hover,
-.entrance:focus,
-.exit:focus {
-  color: #ee3643;
-}
-
-.entrance:active,
-.exit:active {
-  color: rgba(0, 0, 0, 0.5);
-}
-
-.header_nav a {
-  background-color: #32425c;
-}
-
-.header_nav a:hover,
-.header_nav a:focus {
-  background-color: #293449;
-}
-
-.header_nav a:active {
-  background-color: #1d2739;
+.order:active {
+  background-color: #518534;
 }
 
 .color_header {
@@ -107,14 +94,14 @@ img {
   font-style: italic;
 }
 
-.location_header a {
-  font-size: 21px;
-  line-height: 21px;
-}
-
 .explanation,
 .location_header a {
   color: #ee3643;
+}
+
+.location_header a {
+  font-size: 21px;
+  line-height: 21px;
 }
 
 .location_header span {
@@ -122,14 +109,86 @@ img {
   font-size: 14px;
 }
 
+.user_unregistered a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.user_registered ul {
+  list-style: none;
+}
+
+.user_registered .inner_wrap {
+  background-color: #ffffff;
+}
+
+.username {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.username:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.my_orders,
+.personal_area {
+  color: #32425c;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.my_orders:hover,
+.personal_area:hover,
+.my_orders:focus,
+.personal_area:focus {
+  color: #ee3643;
+}
+
+.my_orders:active,
+.personal_area:active {
+  color: rgba(50, 66, 92, 0.3)
+}
+
+.entrance,
+.registration {
+  background-color: #ffffff;
+}
+
+.entrance:hover,
+.registration:hover,
+.entrance:focus,
+.registration:focus {
+  color: #ee3643;
+}
+
+.entrance:active,
+.registration:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .header_nav ul {
   list-style: none;
 }
 
 .header_nav a {
+  background-color: #32425c;
   color: #ffffff;
   font-size: 17px;
   line-height: 17px;
+}
+
+.header_nav a:hover,
+.header_nav a:focus {
+  background-color: #293449;
+}
+
+.header_nav a:active {
+  background-color: #1d2739;
+  color:rgba(255, 255, 255, 0.5);
 }
 
 .visually-hidden {
@@ -171,6 +230,8 @@ img {
   background-color: #ee3643;
   font-size: 14px;
   line-height: 18px;
+  border: none;
+  text-transform: uppercase;
 }
 
 .button:hover {
@@ -266,6 +327,145 @@ img {
   color: #ee3643;
   text-decoration: none;
 }
+
+/* Для каталога */
+
+.catalog .header_logo:hover,
+.catalog .header_logo:focus{
+  background-color: #ca2c37;
+}
+
+.catalog .header_logo:active {
+  background-color: #ba2732;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs_item a,
+.breadcrumbs_item {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.filter legend {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.power legend {
+  letter-spacing: 0.1px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter_input + label {
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.filter_input:disabled + label {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter button {
+  font-size: 13px;
+  line-height: 18px;
+  background-color: #ffffff;
+  border: none;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.hammer_drill_item a {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  line-height: 20px;
+}
+
+.old_price {
+  color: #999999;
+  text-decoration: line-through;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.price_today {
+  color: #ffffff;
+  text-decoration: line-through;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  background-color: #ee3643;
+  text-transform: uppercase;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+div .buy,
+div .to_bookmarks{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+div .buy {
+  background-color: #63a63e;
+  color: #ffffff;
+}
+
+div .buy:hover,
+div .buy:focus {
+  background-color: #65b334;
+}
+
+div .buy:active {
+  background-color: #518534;
+}
+
+div .to_bookmarks {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+div .to_bookmarks:active {
+  color: rgba(50, 66, 92, 0.3)
+}
+
+
+
+
+
+
+
+
 
 
 
