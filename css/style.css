@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Cuprum', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -84,7 +84,7 @@ input.search::placeholder {
 
 .color_header {
   background-color: #f3f7f9;
-  background-image: url(/img/jpg/top_background.jpg);
+  background-image: url(../img/jpg/top_background.jpg);
   background-repeat: no-repeat;
 }
 
@@ -240,6 +240,18 @@ input.search::placeholder {
   background-color: #c682c2;
 }
 
+.content_slider h3 {
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.content_slider p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
 .discounts {
   background-color: #8ed78f;
 }
@@ -273,7 +285,7 @@ input.search::placeholder {
 
 .services_wrapper {
   background-color: #f3f7f9;
-  background-image: url("/img/jpg/top_background.jpg");
+  background-image: url("../img/jpg/top_background.jpg");
 }
 
 .services h2 {
@@ -284,7 +296,7 @@ input.search::placeholder {
 
 .services p {
   font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .service_slider_list {
@@ -321,7 +333,7 @@ input.search::placeholder {
 
 .service_slider p {
   font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .credit a {
@@ -337,7 +349,7 @@ input.search::placeholder {
 
 .index_columns p {
   font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .virtues_list {
@@ -452,12 +464,12 @@ input.search::placeholder {
   text-decoration: none;
 }
 
-.catalog .header_logo:hover,
-.catalog .header_logo:focus{
+.catalog_logo:hover,
+.catalog_logo:focus{
   background-color: #ca2c37;
 }
 
-.catalog .header_logo:active {
+.catalog_logo:active {
   background-color: #ba2732;
 }
 
@@ -467,7 +479,7 @@ input.search::placeholder {
 
 .breadcrumbs_item a,
 .breadcrumbs_item {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -480,11 +492,11 @@ input.search::placeholder {
   color: #32425c;
   text-transform: uppercase;
   background-color: #f3f7f9;
-  background-image: url("/img/jpg/top_background.jpg");
+  background-image: url("../img/jpg/top_background.jpg");
 }
 
 .filter legend {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -500,7 +512,7 @@ input.search::placeholder {
 }
 
 .filter h2 {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -512,7 +524,7 @@ input.search::placeholder {
 }
 
 .filter_interval input{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   border: none;
@@ -536,7 +548,7 @@ input.search::placeholder {
 
 .sorting h2,
 .sorting a{
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -559,7 +571,7 @@ input.search::placeholder {
 }
 
 .filter_input + label {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 20px;
@@ -578,7 +590,7 @@ input.search::placeholder {
   line-height: 18px;
   background-color: #ffffff;
   border: none;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -587,7 +599,7 @@ input.search::placeholder {
 }
 
 .hammer_drill_item a {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   color: #000000;
   text-align: center;
@@ -598,7 +610,7 @@ input.search::placeholder {
   color: #999999;
   text-decoration: line-through;
   text-align: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -607,7 +619,7 @@ input.search::placeholder {
   color: #ffffff;
   text-decoration: line-through;
   text-align: center;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   background-color: #ee3643;
   text-transform: uppercase;
@@ -617,34 +629,41 @@ input.search::placeholder {
   text-transform: uppercase;
 }
 
-div .buy,
-div .to_bookmarks{
+.drop_price .buy,
+.drop_price .to_bookmarks{
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-div .buy {
+.drop_price .buy {
   background-color: #63a63e;
   color: #ffffff;
 }
 
-div .buy:hover,
-div .buy:focus {
+.drop_price .buy:hover,
+.drop_price .buy:focus {
   background-color: #65b334;
 }
 
-div .buy:active {
+.drop_price .buy:active {
   background-color: #518534;
 }
 
-div .to_bookmarks {
+.drop_price .to_bookmarks {
   background-color: #ffffff;
   color: #32425c;
+  border: 3px solid #63a63e;
 }
 
-div .to_bookmarks:active {
-  color: rgba(50, 66, 92, 0.3)
+.drop_price .to_bookmarks:hover,
+.drop_price .to_bookmarks:focus {
+  border-color: #32425c;
+}
+
+.drop_price .to_bookmarks:active {
+  color: rgba(50, 66, 92, 0.3);
+  border-color: rgba(50, 66, 92, 0.3);
 }
 
 .pagination_list {
@@ -652,7 +671,7 @@ div .to_bookmarks:active {
 }
 
 .pagination_list a {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -676,7 +695,7 @@ div .to_bookmarks:active {
 
 .rotary_hammer_information p {
   font-size: 13px;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 

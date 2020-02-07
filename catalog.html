@@ -4,47 +4,47 @@
 <head>
   <meta charset="utf-8" />
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="catalog">
+<body>
   <header class="color_header">
     <div class="upper_header">
-      <p class='header_logo'>
-        <a href='index.html'>
+      <p class="header_logo catalog_logo">
+        <a href="index.html">
           <img width="109" height="19" src="img/png/logo_header.png" alt="Логотип техномарта">
         </a>
       </p>
       <form action="https://echo.htmlacademy.ru" method="get">
         <input class="search" type="search" placeholder="Поиск:">
       </form>
-      <a class='bookmarks' href="#">Закладки:0</a>
-      <a class='basket' href="#">Корзина:0</a>
-      <a class='order' href="#">Оформить заказ</a>
+      <a class="bookmarks" href="#">Закладки:0</a>
+      <a class="basket" href="#">Корзина:0</a>
+      <a class="order" href="#">Оформить заказ</a>
     </div>
-    <p class='explanation'>
+    <p class="explanation">
       Интернет-магазин
       строительных материалов
       и инструментов для ремонта
     </p>
-    <p class='location_header'>
+    <p class="location_header">
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. </span>
     </p>
-    <div class='user_registered'>
+    <div class="user_registered">
       <div class="inner_wrap">
         <a class="username" href="#">Равшан Джамшутович</a>
-        <a class='exit' href="#" aria-label="Выход"></a>
+        <a class="exit" href="#" aria-label="Выход"></a>
       </div>
       <ul>
-        <li><a class='my_orders' href="#">Мои заказы</a> </li>
-        <li><a class='personal_area' href="#">Личный кабинет</a> </li>
+        <li><a class="my_orders" href="#">Мои заказы</a> </li>
+        <li><a class="personal_area" href="#">Личный кабинет</a> </li>
       </ul>
     </div>
-    <nav class='header_nav'>
+    <nav class="header_nav">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="company.html">Компания</a></li>
@@ -58,14 +58,14 @@
   </header>
   <main>
     <h1>Перфораторы</h1>
-    <ul class='breadcrumbs'>
+    <ul class="breadcrumbs">
       <li class="home"><a href="index.html" aria-label="На главную"></a></li>
-      <li class='breadcrumbs_item'><a>Каталог</a></li>
-      <li class='breadcrumbs_item'><a href="tool.html">Инструмент</a></li>
-      <li class='breadcrumbs_item'>Перфораторы</li>
+      <li class="breadcrumbs_item"><a>Каталог</a></li>
+      <li class="breadcrumbs_item"><a href="tool.html">Инструмент</a></li>
+      <li class="breadcrumbs_item">Перфораторы</li>
     </ul>
 
-    <section class='filter'>
+    <section class="filter">
       <h2>Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="price">
@@ -133,7 +133,7 @@
       </form>
     </section>
 
-    <section class='hammer_drill_list'>
+    <section class="hammer_drill_list">
       <div class="sorting">
         <h2>Сортировка:</h2>
         <ul class="sorting_main">
@@ -149,18 +149,18 @@
       <h2 class="visually_hidden">Список перфораторов</h2>
       <ul class="hammer_drill_list">
         <li class="hammer_drill_item">
-          <h3 class='hammer_drill_title'>
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 3000</span>
             </a>
           </h3>
           <img src="img/jpg/product_2.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p class='old_price'>
+          <p class="old_price">
             22500 р.
           </p>
           <p class="price_today">
@@ -168,33 +168,33 @@
           </p>
         </li>
         <li class="hammer_drill_item">
-          <h3 class='hammer_drill_title'>
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 6000</span>
             </a>
           </h3>
           <img src="img/jpg/product_3.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p class='old_price'>
+          <p class="old_price">
             30500 р.
           </p>
           <p class="price_today">
             25500 р.
           </p>
         </li>
-        <li class='new hammer_drill_item'>
-          <h3 class='hammer_drill_title'>
+        <li class="new hammer_drill_item">
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 2000</span>
             </a>
           </h3>
           <img src="img/jpg/product_4.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
@@ -203,37 +203,37 @@
           </p>
         </li>
         <li class="hammer_drill_item">
-          <h3 class='hammer_drill_title'>
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 3000</span>
             </a>
           </h3>
           <img src="img/jpg/product_2.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p class='old_price'>
+          <p class="old_price">
             22500 р.
           </p>
           <p class="price_today">
             15500 р.
           </p>
         </li>
-        <li class='new hammer_drill_item'>
-          <h3 class='hammer_drill_title'>
+        <li class="new hammer_drill_item">
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 6000</span>
             </a>
           </h3>
           <img src="img/jpg/product_3.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p class='old_price'>
+          <p class="old_price">
             30500 р.
           </p>
           <p class="price_today">
@@ -241,14 +241,14 @@
           </p>
         </li>
         <li class="hammer_drill_item">
-          <h3 class='hammer_drill_title'>
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 2000</span>
             </a>
           </h3>
           <img src="img/jpg/product_4.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
@@ -256,19 +256,19 @@
             12500 р.
           </p>
         </li>
-        <li class='new hammer_drill_item'>
-          <h3 class='hammer_drill_title'>
+        <li class="new hammer_drill_item">
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 3000</span>
             </a>
           </h3>
           <img src="img/jpg/product_2.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p class='old_price'>
+          <p class="old_price">
             22500 р.
           </p>
           <p class="price_today">
@@ -276,18 +276,18 @@
           </p>
         </li>
         <li class="hammer_drill_item">
-          <h3 class='hammer_drill_title'>
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 6000</span>
             </a>
           </h3>
           <img src="img/jpg/product_3.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p class='old_price'>
+          <p class="old_price">
             30500 р.
           </p>
           <p class="price_today">
@@ -295,14 +295,14 @@
           </p>
         </li>
         <li class="hammer_drill_item">
-          <h3 class='hammer_drill_title'>
+          <h3 class="hammer_drill_title">
             <a href="catalog_item.html">
               Перфоратор <span class="caps">Bosch BFG 2000</span>
             </a>
           </h3>
           <img src="img/jpg/product_4.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
-          <div>
+          <div class="drop_price">
             <a class="buy" href="#">Купить</a>
             <a class="to_bookmarks" href="#">В закладки</a>
           </div>
@@ -333,16 +333,16 @@
 
   </main>
   <footer class="color_footer">
-    <p class='footer_logo'>
+    <p class="footer_logo catalog_logo">
       <a>
         <img width="138" height="23" src="img/png/logo_footer.png" alt="Логотип техномарта">
       </a>
     </p>
-    <p class='location_footer'>
+    <p class="location_footer">
       г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
     </p>
-    <nav class='footer_nav'>
+    <nav class="footer_nav">
       <ul class="first_links">
         <li><a href="company.html">Компания</a></li>
         <li><a href="news.html">Новости</a></li>
@@ -378,12 +378,14 @@
     </div>
   </footer>
 
-  <section class='purchase'>
+  <section class="purchase">
     <h2>Товар добавлен в корзину!</h2>
     <a href="#">Оформить заказ</a>
-    <a href='#'>Продолжить покупки</a>
+    <a href="#">Продолжить покупки</a>
     <button type="button">Закрыть</button>
   </section>
 </body>
 
 </html>
+
+
