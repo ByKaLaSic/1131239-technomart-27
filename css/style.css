@@ -75,7 +75,7 @@ input.search::placeholder {
 
 .order:hover,
 .order:focus {
-  background-color: #65b334;
+  background-color: #5fbb2d;
 }
 
 .order:active {
@@ -191,7 +191,7 @@ input.search::placeholder {
   color:rgba(255, 255, 255, 0.5);
 }
 
-.visually-hidden {
+.visually_hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -202,7 +202,131 @@ input.search::placeholder {
   overflow: hidden;
 }
 
-/* Пропуск */
+.content_card h3 {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.content_card a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.materials a {
+  background-color: #e5ac40;
+}
+
+.tool {
+  background-color: #3bbce3;
+}
+
+.tool a {
+  background-color: #35a9cc;
+}
+
+.equipment {
+  background-color: #dc91d8;
+}
+
+.equipment a {
+  background-color: #c682c2;
+}
+
+.discounts {
+  background-color: #8ed78f;
+}
+
+.discounts a {
+  background-color: #80c180;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.delivery a {
+  background-color: #e5ac40;
+}
+
+.top_frame {
+  background-color: #f9f5f0;
+}
+
+.top_frame h2 {
+  color: #32425c;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.popular_manufacturers ul {
+  list-style: none;
+}
+
+.services_wrapper {
+  background-color: #f3f7f9;
+  background-image: url("/img/jpg/top_background.jpg");
+}
+
+.services h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services p {
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.service_slider_list {
+  list-style: none;
+}
+
+.service_slider_list button {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+  border: none;
+  background-color: #32425c;
+}
+
+.service_slider_list button:hover:not(.current_services) {
+  background-color: #293449;
+}
+
+.service_slider_list .current_services {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services_slider_title {
+  color: #32425c;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.delivery_section h3 {
+  line-height:36px;
+}
+
+.service_slider p {
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.credit a {
+  background-color: #ff5357;
+}
 
 .index_columns h2 {
   font-size: 30px;
@@ -328,8 +452,6 @@ input.search::placeholder {
   text-decoration: none;
 }
 
-/* Для каталога */
-
 .catalog .header_logo:hover,
 .catalog .header_logo:focus{
   background-color: #ca2c37;
@@ -357,6 +479,8 @@ input.search::placeholder {
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+  background-color: #f3f7f9;
+  background-image: url("/img/jpg/top_background.jpg");
 }
 
 .filter legend {
@@ -364,6 +488,7 @@ input.search::placeholder {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .power legend {
@@ -372,6 +497,65 @@ input.search::placeholder {
 
 .filter ul {
   list-style: none;
+}
+
+.filter h2 {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.filter_range_wrapper {
+  background-color: #f7f3ec;
+}
+
+.filter_interval input{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+}
+
+.from:first-child input{
+  background-color: #f7f3ec;
+}
+
+.before:last-child input{
+  background-color: #f7f3ec;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting ul {
+  list-style: none;
+}
+
+.sorting h2,
+.sorting a{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.sorting a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #ee3643;
+}
+
+.sorting a:hover,
+.sorting a:focus {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting a:active {
+  color: #ee3643;
+  border-bottom: none;
 }
 
 .filter_input + label {
@@ -463,8 +647,37 @@ div .to_bookmarks:active {
   color: rgba(50, 66, 92, 0.3)
 }
 
+.pagination_list {
+  list-style: none;
+}
 
+.pagination_list a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
 
+.pagination_list a:hover,
+.pagination_list a:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination_list a:active {
+  border: 1px solid #ee3643;
+}
+
+.rotary_hammer_information h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.rotary_hammer_information p {
+  font-size: 13px;
+  font-family: 'PT Sans', sans-serif;
+}
 
 
 

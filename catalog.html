@@ -69,7 +69,8 @@
       <h2>Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="price">
-          <div class="filter">
+          <legend>Цена:</legend>
+          <div class="filter_inner">
             <div class="filter_range_wrapper">
               <div class="filter_range">
                 <div class="filter_range_scale">
@@ -81,8 +82,12 @@
             </div>
 
             <div class="filter_interval">
-              <label>От <input type="text" name="min_interval" value="0"></label>
-              <label>До <input type="text" name="max_interval" value="15000"></label>
+              <div class="from">
+                <label>От <input type="text" name="min_interval" value="0"></label>
+              </div>
+              <div class="before">
+                <label>До <input type="text" name="max_interval" value="15000"></label>
+              </div>
             </div>
           </div>
         </fieldset>
@@ -131,17 +136,17 @@
     <section class='hammer_drill_list'>
       <div class="sorting">
         <h2>Сортировка:</h2>
-        <ul>
+        <ul class="sorting_main">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <ul>
+        <ul class="sorting_arrows">
           <li><a href="#" aria-label="Сортировать вверх"></a></li>
           <li><a href="#" aria-label="Сортировать вниз"></a></li>
         </ul>
       </div>
-      <h2 class="visually-hidden">Список перфораторов</h2>
+      <h2 class="visually_hidden">Список перфораторов</h2>
       <ul class="hammer_drill_list">
         <li class="hammer_drill_item">
           <h3 class='hammer_drill_title'>

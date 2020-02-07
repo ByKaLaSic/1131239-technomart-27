@@ -51,19 +51,19 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Техномарт</h1>
+    <h1 class="visually_hidden">Техномарт</h1>
 
-    <section class='content'>
-      <h2 class="visually-hidden">Контент</h2>
-      <div class='materials'>
+    <section class='content content_card'>
+      <h2 class="visually_hidden">Контент</h2>
+      <div class='materials content_card'>
         <h3>Материалы</h3>
         <a href="#">На любой вкус</a>
       </div>
-      <div class='tool'>
+      <div class='tool content_card'>
         <h3>Инструмент</h3>
         <a href="#">На все случаи</a>
       </div>
-      <div class='equipment'>
+      <div class='equipment content_card'>
         <h3>Техника</h3>
         <a href="#">Для стройки</a>
       </div>
@@ -89,11 +89,11 @@
         <button type="button">Вправо</button>
       </div>
 
-      <div class='discounts'>
+      <div class='discounts content_card'>
         <h3>Скидки 50%</h3>
         <a href="#">На 350 товаров</a>
       </div>
-      <div class='delivery'>
+      <div class='delivery content_card'>
         <h3>Доставка</h3>
         <a href="#">Бесплатно</a>
       </div>
@@ -102,84 +102,80 @@
     <section class='popular_goods'>
       <div class='top_frame'>
         <h2>Популярные товары:</h2>
-        <a href="#">Все популярные товары</a>
+        <a class="button" href="#">Все популярные товары</a>
       </div>
       <ul>
-        <li>
+        <li class="hammer_drill_item">
           <h3 class='hammer_drill_title'>
             <a href="catalog_item.html">
-              Перфоратор Bosch
-              BFG 9000
+              Перфоратор <span class="caps">Bosch BFG 9000</span>
             </a>
           </h3>
           <img src="img/jpg/product_1.jpg" width="218" height="170"
-            alt="Фото перфоратора с длинным наконечником. Цвета перфоратора: голубой, серый, чёрный. Мощный">
+            alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
           <div>
-            <a href="#">Купить</a>
-            <a href="#">Заказать</a>
+            <a class="buy" href="#">Купить</a>
+            <a class="to_bookmarks" href="#">В закладки</a>
           </div>
           <p class='old_price'>
-            32500 Р.
+            32500 р.
           </p>
-          <p>
-            25500 Р.
+          <p class="price_today">
+            25500 р.
           </p>
         </li>
-        <li>
+        <li class="hammer_drill_item">
           <h3 class='hammer_drill_title'>
             <a href="catalog_item.html">
-              Перфоратор Bosch
-              BFG 3000
+              Перфоратор <span class="caps">Bosch BFG 3000</span>
             </a>
           </h3>
           <img src="img/jpg/product_2.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
           <div>
-            <a href="#">Купить</a>
-            <a href="#">Заказать</a>
+            <a class="buy" href="#">Купить</a>
+            <a class="to_bookmarks" href="#">В закладки</a>
           </div>
           <p class='old_price'>
-            22500 Р.
+            22500 р.
           </p>
-          <p>
-            15500 Р.
+          <p class="price_today">
+            15500 р.
           </p>
         </li>
-        <li>
+        <li class='new hammer_drill_item'>
           <h3 class='hammer_drill_title'>
             <a href="catalog_item.html">
-              Перфоратор Bosch
-              BFG 6000
+              Перфоратор <span class="caps">Bosch BFG 6000</span>
             </a>
           </h3>
           <img src="img/jpg/product_3.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
           <div>
-            <a href="#">Купить</a>
-            <a href="#">Заказать</a>
+            <a class="buy" href="#">Купить</a>
+            <a class="to_bookmarks" href="#">В закладки</a>
           </div>
           <p class='old_price'>
-            30500 Р.
+            30500 р.
           </p>
-          <p>
-            25500 Р.
+          <p class="price_today">
+            25500 р.
           </p>
         </li>
-        <li class='new'>
+        <li class="hammer_drill_item">
           <h3 class='hammer_drill_title'>
             <a href="catalog_item.html">
-              Перфоратор Bosch
-              BFG 2000
+              Перфоратор <span class="caps">Bosch BFG 2000</span>
             </a>
           </h3>
           <img src="img/jpg/product_4.jpg" width="218" height="170"
             alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
           <div>
-            <a href="#">Купить</a>
-            <a href="#">Заказать</a>
+            <a class="buy" href="#">Купить</a>
+            <a class="to_bookmarks" href="#">В закладки</a>
           </div>
-          <p>
-            12500 Р.
+          <p class="price_today">
+            12500 р.
           </p>
         </li>
       </ul>
@@ -188,7 +184,7 @@
     <section class='popular_manufacturers'>
       <div class='top_frame'>
         <h2>Популярные производители:</h2>
-        <a href="#">Все производители</a>
+        <a class="button" href="#">Все производители</a>
       </div>
       <ul>
         <li><a href="#"><img width="126" height="37" src="img/jpg/bosch.jpg" alt="Логотип Bosch"></a></li>
@@ -202,51 +198,54 @@
       </ul>
     </section>
 
-    <section class='services'>
-      <h2>Сервисы</h2>
-      <p>
-        Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-      </p>
-    </section>
-
-    <section class='service_slider'>
-      <ul>
-        <li><button type="button">Доставка</button></li>
-        <li><button type="button">Гарантия</button></li>
-        <li><button type="button">Кредит</button></li>
-      </ul>
-
-      <div class='delivery_section'>
-        <h2>Доставка</h2>
+    <div class="services_wrapper">
+      <section class='services'>
+        <h2>Сервисы</h2>
         <p>
-          Мы с удовольствием доставим ваш товар прямо<br>
-          к вашему подъезду совершенно Бесплатно!
-          Ведь мы неплохо заработаем,<br>
-          поднимая его на ваш этаж!
+          Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-      </div>
+      </section>
 
-      <div class='warranty'>
-        <h2>Гарантия</h2>
-        <p>
-          Если купленный у нас товар поломается или заискрит,<br>
-          а также в случае пожара, спровоцированного его возгоранием,
-          вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-          сгоревший товар на новый.<br>
-          Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
+      <section class='service_slider'>
+        <h2 class="visually_hidden">Слайдер сервисов</h2>
+        <ul class="service_slider_list">
+          <li><button class="current_services" type="button">Доставка</button></li>
+          <li><button type="button">Гарантия</button></li>
+          <li><button type="button">Кредит</button></li>
+        </ul>
 
-      <div class="credit">
-        <h2>Кредит</h2>
-        <p>
-          Залезть в долговую яму стало проще!<br>
-          Кредитные консультанты придут вам на помощь.
-        </p>
-        <a href="#">Отправить заявку</a>
-      </div>
-    </section>
+        <div class='delivery_section'>
+          <h3 class="services_slider_title">Доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно Бесплатно!
+            Ведь мы неплохо заработаем,<br>
+            поднимая его на ваш этаж!
+          </p>
+        </div>
+
+        <div class='warranty'>
+          <h3 class="services_slider_title">Гарантия</h3>
+          <p>
+            Если купленный у нас товар поломается или заискрит,<br>
+            а также в случае пожара, спровоцированного его возгоранием,
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+            сгоревший товар на новый.<br>
+            Дом уж восстановите как-нибудь сами.
+          </p>
+        </div>
+
+        <div class="credit">
+          <h3 class="services_slider_title">Кредит</h3>
+          <p>
+            Залезть в долговую яму стало проще!<br>
+            Кредитные консультанты придут вам на помощь.
+          </p>
+          <a class="button" href="#">Отправить заявку</a>
+        </div>
+      </section>
+    </div>
 
     <div class="index_columns">
       <section class='virtues'>
