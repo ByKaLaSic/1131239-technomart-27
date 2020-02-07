@@ -214,30 +214,28 @@ input.search::placeholder {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.content_card a:hover,
+.content_card a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content_card a:active {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .materials {
   background-color: #ffbf47;
 }
 
-.materials a {
-  background-color: #e5ac40;
-}
-
 .tool {
   background-color: #3bbce3;
 }
 
-.tool a {
-  background-color: #35a9cc;
-}
-
 .equipment {
   background-color: #dc91d8;
-}
-
-.equipment a {
-  background-color: #c682c2;
 }
 
 .content_slider h3 {
@@ -256,16 +254,8 @@ input.search::placeholder {
   background-color: #8ed78f;
 }
 
-.discounts a {
-  background-color: #80c180;
-}
-
 .delivery {
   background-color: #ffc047;
-}
-
-.delivery a {
-  background-color: #e5ac40;
 }
 
 .top_frame {
