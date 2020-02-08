@@ -672,6 +672,7 @@ filter {
 .sorting {
   background-color: #f7f3ec;
   width: 700px;
+  margin-bottom: 20px;
 }
 
 .sorting ul {
