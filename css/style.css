@@ -261,11 +261,19 @@ input.search::placeholder {
   overflow: hidden;
 }
 
+.content_card {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .content_card h3 {
   font-weight: bold;
   color: #ffffff;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .content_card a {
@@ -297,16 +305,54 @@ input.search::placeholder {
   background-color: #dc91d8;
 }
 
+.equipment,
+.discounts,
+.delivery {
+  margin-right: 0;
+}
+
+.drill_photo {
+  width: 620px;
+}
+
+.hammer_drill_photo {
+  width: 620px;
+}
+
+.hammer_drill {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 53px;
+}
+
+.content_slider {
+  margin-right: 20px;
+}
+
+.content_slider button {
+  display: none;
+}
+
+.content_slider a {
+  display: none;
+}
+
 .content_slider h3 {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+  display: none;
 }
 
 .content_slider p {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  display: none;
 }
 
 .discounts {
@@ -315,13 +361,17 @@ input.search::placeholder {
 
 .delivery {
   background-color: #ffc047;
+  margin-bottom: 0;
 }
 
 .top_frame {
   background-color: #f9f5f0;
+  margin-bottom: 20px;
 }
 
 .top_frame h2 {
+  margin: 0;
+  padding: 0;
   color: #32425c;
   text-transform: uppercase;
   font-size: 30px;
@@ -330,30 +380,62 @@ input.search::placeholder {
 
 .popular_goods ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular_manufacturers {
+  margin-bottom: 65px;
 }
 
 .popular_manufacturers ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular_manufacturers li {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.popular_manufacturers li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .services_wrapper {
   background-color: #f3f7f9;
   background-image: url("../img/jpg/top_background.jpg");
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .services h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 66px;
+  margin-bottom: 37px;
 }
 
 .services p {
   font-size: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
+  width: 400px;
+  margin-bottom: 76px;
 }
 
 .service_slider_list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service_slider_list button {
@@ -378,15 +460,34 @@ input.search::placeholder {
   color: #32425c;
   font-size: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
 }
 
 .delivery_section h3 {
   line-height:36px;
 }
 
+.service_slider {
+  display: flex;
+  margin-bottom: 98px;
+}
+
+.service_slider_left {
+  margin-right: 80px;
+}
+
 .service_slider p {
   font-size: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.warranty,
+.credit {
+  display: none;
 }
 
 .credit a {
@@ -734,6 +835,8 @@ filter {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  margin-bottom: 32px;
+  width: 700px;
 }
 
 .hammer_drill_item {
@@ -742,7 +845,20 @@ filter {
   margin-right: 20px;
 }
 
+.hammer_drill_title {
+  margin: 0;
+  padding: 0;
+}
+
 .hammer_drill_item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.main_drill_item:nth-child(3n) {
+  margin-right: 20px;
+}
+
+.main_drill_item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -765,6 +881,8 @@ filter {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .price_today {
@@ -775,6 +893,8 @@ filter {
   font-weight: bold;
   background-color: #ee3643;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .caps {
@@ -820,6 +940,9 @@ filter {
 
 .pagination_list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .pagination_list a {
@@ -839,15 +962,30 @@ filter {
   border: 1px solid #ee3643;
 }
 
+.rotary_hammer_information {
+  background-color: #f3f7f9;
+  background-image: url(../img/jpg/top_background.jpg);
+  background-repeat: no-repeat;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
 .rotary_hammer_information h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-top: 67px;
+  margin-bottom: 37px;
 }
 
 .rotary_hammer_information p {
   font-size: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 73px;
 }
 
 

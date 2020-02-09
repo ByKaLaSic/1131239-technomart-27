@@ -77,7 +77,7 @@
         <div class="content_slider">
           <div class="drill">
             <h3>Дрели</h3>
-            <div>
+            <div class="drill_photo">
               <img width="620" height="266" src="img/jpg/drill_photo_1.jpg" alt="фото работника с дрелью">
             </div>
             <p>Соседям на радость!</p>
@@ -85,7 +85,7 @@
           </div>
           <div class="hammer_drill">
             <h3>Перфораторы</h3>
-            <div>
+            <div class="hammer_drill_photo">
               <img width="620" height="266" src="img/jpg/drill_photo_2.jpg" alt="фото работника с перфоратором">
             </div>
             <p>Настоящие мужские игрушки</p>
@@ -111,7 +111,7 @@
           <a class="button" href="#">Все популярные товары</a>
         </div>
         <ul>
-          <li class="hammer_drill_item">
+          <li class="hammer_drill_item main_drill_item">
             <h3 class="hammer_drill_title">
               <a href="catalog_item.html">
                 Перфоратор <span class="caps">Bosch BFG 9000</span>
@@ -130,7 +130,7 @@
               25500 р.
             </p>
           </li>
-          <li class="hammer_drill_item">
+          <li class="hammer_drill_item main_drill_item">
             <h3 class='hammer_drill_title'>
               <a href="catalog_item.html">
                 Перфоратор <span class="caps">Bosch BFG 3000</span>
@@ -149,7 +149,7 @@
               15500 р.
             </p>
           </li>
-          <li class="new hammer_drill_item">
+          <li class="new hammer_drill_item main_drill_item">
             <h3 class="hammer_drill_title">
               <a href="catalog_item.html">
                 Перфоратор <span class="caps">Bosch BFG 6000</span>
@@ -168,7 +168,7 @@
               25500 р.
             </p>
           </li>
-          <li class="hammer_drill_item">
+          <li class="hammer_drill_item main_drill_item">
             <h3 class="hammer_drill_title">
               <a href="catalog_item.html">
                 Перфоратор <span class="caps">Bosch BFG 2000</span>
@@ -203,8 +203,9 @@
           <li><a href="#"><img width="204" height="69" src="img/jpg/metabo.jpg" alt="Логотип Metabo"></a></li>
         </ul>
       </section>
-
-      <div class="services_wrapper">
+    </div>
+    <div class="services_wrapper">
+      <div class="container">
         <section class="services">
           <h2>Сервисы</h2>
           <p>
@@ -214,12 +215,14 @@
         </section>
 
         <section class="service_slider">
-          <h2 class="visually_hidden">Слайдер сервисов</h2>
-          <ul class="service_slider_list">
-            <li><button class="current_services" type="button">Доставка</button></li>
-            <li><button type="button">Гарантия</button></li>
-            <li><button type="button">Кредит</button></li>
-          </ul>
+          <div class="service_slider_left">
+            <h2 class="visually_hidden">Слайдер сервисов</h2>
+            <ul class="service_slider_list">
+              <li><button class="current_services" type="button">Доставка</button></li>
+              <li><button type="button">Гарантия</button></li>
+              <li><button type="button">Кредит</button></li>
+            </ul>
+          </div>
 
           <div class="delivery_section">
             <h3 class="services_slider_title">Доставка</h3>
@@ -252,40 +255,40 @@
           </div>
         </section>
       </div>
+    </div>
 
-      <div class="index_columns">
-        <div class="container">
-          <section class="virtues">
-            <h2>Компания «Техномарт»</h2>
-            <p>
-              Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-              строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-            </p>
-            <p>
-              Мы можем доставить ваш товар в самые отдаленные точки России!
-              Техномарт работает со многими транспортными компаниями:
-            </p>
-            <ul class="virtues_list">
-              <li>Деловые линии</li>
-              <li>Автотрейдинг</li>
-              <li>ЖелДорЭкспедиция</li>
-            </ul>
-            <a class="button" href="news.html">Подробнее о компании</a>
-          </section>
+    <div class="index_columns">
+      <div class="container">
+        <section class="virtues">
+          <h2>Компания «Техномарт»</h2>
+          <p>
+            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+            строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="virtues_list">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="news.html">Подробнее о компании</a>
+        </section>
 
-          <section class="contacts">
-            <h2>Контакты</h2>
-            <p>
-              Вы можете забрать товар сами,
-              Заехав в наш офис:
-            </p>
-            <a href="#">
-              <img width="300" height="158" src="img/png/map.png"
-                alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            </a>
-            <a class="button" href="#">Заблудились? Напишите нам!</a>
-          </section>
-        </div>
+        <section class="contacts">
+          <h2>Контакты</h2>
+          <p>
+            Вы можете забрать товар сами,
+            Заехав в наш офис:
+          </p>
+          <a href="#">
+            <img width="300" height="158" src="img/png/map.png"
+              alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </a>
+          <a class="button" href="#">Заблудились? Напишите нам!</a>
+        </section>
       </div>
     </div>
   </main>
