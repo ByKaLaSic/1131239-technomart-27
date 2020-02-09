@@ -95,7 +95,7 @@ input.search::placeholder {
 }
 
 .container {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -109,7 +109,6 @@ input.search::placeholder {
 
 .middle_header {
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 44px;
 }
 
@@ -121,6 +120,7 @@ input.search::placeholder {
   font-style: italic;
   width: 200px;
   margin-right: 70px;
+  margin-left: 52px;
 }
 
 .location_header {
