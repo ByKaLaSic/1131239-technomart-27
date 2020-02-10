@@ -1,5 +1,11 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -110,6 +116,7 @@ input.search::placeholder {
 .middle_header {
   display: flex;
   margin-bottom: 44px;
+  justify-content: flex-end;
 }
 
 .explanation {
@@ -120,7 +127,6 @@ input.search::placeholder {
   font-style: italic;
   width: 200px;
   margin-right: 70px;
-  margin-left: 52px;
 }
 
 .location_header {
@@ -851,6 +857,8 @@ filter {
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -869,7 +877,6 @@ filter {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   margin-bottom: 32px;
   width: 700px;
 }
@@ -978,7 +985,6 @@ filter {
   margin: 0;
   padding: 0;
   margin-bottom: 60px;
-  margin-left: 240px;
   display: flex;
 }
 
