@@ -21,8 +21,12 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <input class="search" type="search" placeholder="Поиск:">
         </form>
-        <a class="bookmarks" href="#">Закладки:0</a>
-        <a class="basket" href="#">Корзина:0</a>
+        <a class="bookmarks" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16"><path fill="#E72C2D" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+          Закладки: 0</a>
+        <a class="basket" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><circle cx="4.5" cy="13.5" r="1.5" /><circle cx="12.5" cy="13.5" r="1.5" /><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
+          Корзина: 0</a>
         <a class="order" href="#">Оформить заказ</a>
       </div>
     </div>
@@ -31,26 +35,28 @@
         <p class="explanation">
           Интернет-магазин
           строительных материалов
-          и инструментов для ремонта
+          и&nbsp;инструментов для ремонта
         </p>
         <div class="location_header">
           <p><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.</p>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-        <div class="user_unregistered">
-          <a class="entrance" href='login.html' type="button">Войти</a>
-          <a class="registration" href='registration.html' type="button">Регистрация</a>
+        <div class="inner_wraper">
+          <div class="user_unregistered">
+            <a class="entrance" href='login.html' type="button">Войти</a>
+            <a class="registration" href='registration.html' type="button">Регистрация</a>
+          </div>
         </div>
       </div>
       <nav class="header_nav">
         <ul>
-          <li><a>Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="special_offers.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="link_home">Главная</a></li>
+          <li><a class="link_company" href="company.html">Компания</a></li>
+          <li><a class="link_catalog" href="catalog.html">Каталог</a></li>
+          <li><a class="link_news" href="news.html">Новости</a></li>
+          <li><a class="link_special_offers" href="special_offers.html">Спецпредложения</a></li>
+          <li><a class="link_delivery" href="delivery.html">Доставка</a></li>
+          <li><a class="link_contacts" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -61,8 +67,9 @@
 
       <section class="promo">
         <h2 class="visually_hidden">Контент</h2>
-        <div class="inner_top_promo">
+        <div class="inner_left_promo">
           <div class="materials promo_card">
+            <div class="flag flag-new">новинка</div>
             <h3>Материалы</h3>
             <a href="#">На любой вкус</a>
           </div>
@@ -93,7 +100,7 @@
           </div>
         </div>
 
-        <div class="inner_down_promo">
+        <div class="inner_right_promo">
           <div class='equipment promo_card'>
             <h3>Техника</h3>
             <a href="#">Для стройки</a>
@@ -112,7 +119,9 @@
       <section class="popular_goods">
         <div class="top_frame">
           <h2>Популярные товары:</h2>
-          <a class="button" href="#">Все популярные товары</a>
+          <div class="inner_wraper">
+            <a class="button" href="#">Все популярные товары</a>
+          </div>
         </div>
         <ul>
           <li class="hammer_drill_item main_drill_item">
@@ -121,8 +130,10 @@
                 Перфоратор <span class="caps">Bosch BFG 9000</span>
               </a>
             </h3>
-            <img src="img/jpg/product_1.jpg" width="218" height="170"
-              alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
+            <div class="inner_photo">
+              <img src="img/jpg/product_1.jpg" width="218" height="170"
+                alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
+            </div>
             <div class="drop_price">
               <a class="buy" href="#">Купить</a>
               <a class="to_bookmarks" href="#">В закладки</a>
@@ -140,8 +151,10 @@
                 Перфоратор <span class="caps">Bosch BFG 3000</span>
               </a>
             </h3>
-            <img src="img/jpg/product_2.jpg" width="218" height="170"
-              alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
+            <div class="inner_photo">
+              <img src="img/jpg/product_2.jpg" width="218" height="170"
+                alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
+            </div>
             <div class="drop_price">
               <a class="buy" href="#">Купить</a>
               <a class="to_bookmarks" href="#">В закладки</a>
@@ -153,14 +166,16 @@
               15500 р.
             </p>
           </li>
-          <li class="new hammer_drill_item main_drill_item">
+          <li class="hammer_drill_item main_drill_item">
             <h3 class="hammer_drill_title">
               <a href="catalog_item.html">
                 Перфоратор <span class="caps">Bosch BFG 6000</span>
               </a>
             </h3>
-            <img src="img/jpg/product_3.jpg" width="218" height="170"
-              alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
+            <div class="inner_photo">
+              <img src="img/jpg/product_3.jpg" width="218" height="170"
+                alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
+            </div>
             <div class="drop_price">
               <a class="buy" href="#">Купить</a>
               <a class="to_bookmarks" href="#">В закладки</a>
@@ -173,17 +188,22 @@
             </p>
           </li>
           <li class="hammer_drill_item main_drill_item">
+            <div class="flag flag-new">новинка</div>
             <h3 class="hammer_drill_title">
               <a href="catalog_item.html">
                 Перфоратор <span class="caps">Bosch BFG 2000</span>
               </a>
             </h3>
-            <img src="img/jpg/product_4.jpg" width="218" height="170"
-              alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
+            <div class="inner_photo">
+              <img src="img/jpg/product_4.jpg" width="218" height="170"
+                alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
+            </div>
             <div class="drop_price">
               <a class="buy" href="#">Купить</a>
               <a class="to_bookmarks" href="#">В закладки</a>
             </div>
+            <p class="old_price">
+            </p>
             <p class="price_today">
               12500 р.
             </p>
@@ -194,17 +214,25 @@
       <section class="popular_manufacturers">
         <div class="top_frame">
           <h2>Популярные производители:</h2>
-          <a class="button" href="#">Все производители</a>
+          <div class="inner_wraper">
+            <a class="button" href="#">Все производители</a>
+          </div>
         </div>
-        <ul>
-          <li><a href="#"><img width="126" height="37" src="img/jpg/bosch.jpg" alt="Логотип Bosch"></a></li>
-          <li><a href="#"><img width="123" height="40" src="img/jpg/makita.jpg" alt="Логотип Makita"></a></li>
-          <li><a href="#"><img width="146" height="44" src="img/jpg/dewalt.jpg" alt="Логотип DeWALT"></a></li>
-          <li><a href="#"><img width="200" height="88" src="img/jpg/interskol.jpg" alt="Логотип Интерскол"></a></li>
-          <li><a href="#"><img width="169" height="31" src="img/jpg/hitachi.jpg" alt="Логотип Hitachi"></a></li>
-          <li><a href="#"><img width="121" height="73" src="img/jpg//lg.jpg" alt="Логотип LG"></a></li>
-          <li><a href="#"><img width="151" height="96" src="img/jpg/aeg.jpg" alt="Логотип AEG"></a></li>
-          <li><a href="#"><img width="204" height="69" src="img/jpg/metabo.jpg" alt="Логотип Metabo"></a></li>
+        <ul class="logotype">
+          <li><a class="bosch" href="#"><img width="126" height="37" src="img/jpg/bosch.jpg" alt="Логотип Bosch"></a>
+          </li>
+          <li><a class="makita" href="#"><img width="123" height="40" src="img/jpg/makita.jpg" alt="Логотип Makita"></a>
+          </li>
+          <li><a class="dewalt" href="#"><img width="146" height="44" src="img/jpg/dewalt.jpg" alt="Логотип DeWALT"></a>
+          </li>
+          <li><a class="interskol" href="#"><img width="200" height="88" src="img/jpg/interskol.jpg"
+                alt="Логотип Интерскол"></a></li>
+          <li><a class="hitachi" href="#"><img width="169" height="31" src="img/jpg/hitachi.jpg"
+                alt="Логотип Hitachi"></a></li>
+          <li><a class="lg" href="#"><img width="121" height="73" src="img/jpg//lg.jpg" alt="Логотип LG"></a></li>
+          <li><a class="aeg" href="#"><img width="151" height="96" src="img/jpg/aeg.jpg" alt="Логотип AEG"></a></li>
+          <li><a class="metabo" href="#"><img width="204" height="69" src="img/jpg/metabo.jpg" alt="Логотип Metabo"></a>
+          </li>
         </ul>
       </section>
     </div>
@@ -274,9 +302,9 @@
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="virtues_list">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
+            <li class="business_line virtues_item">Деловые линии</li>
+            <li class="auto_trading virtues_item">Автотрейдинг</li>
+            <li class="expedition virtues_item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="button" href="news.html">Подробнее о компании</a>
         </section>
@@ -285,9 +313,9 @@
           <h2>Контакты</h2>
           <p>
             Вы можете забрать товар сами,
-            Заехав в наш офис:
+            заехав в наш офис:
           </p>
-          <a href="#">
+          <a class="little_map" href="#">
             <img width="300" height="158" src="img/png/map.png"
               alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </a>
