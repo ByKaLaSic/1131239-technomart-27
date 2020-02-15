@@ -2126,11 +2126,6 @@ left: -8px;
   flex-wrap: wrap;
 }
 
-.pagination_item_current {
-  background-color: #ee3643;
-  color: #ffffff;
-}
-
 .pagination_list a {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -2144,6 +2139,7 @@ left: -8px;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  color: #000000;
 }
 
 .pagination_list a:not(.pagination_item_current) {
@@ -2161,6 +2157,11 @@ left: -8px;
 
 .pagination_list a:active:not(.pagination_item_current) {
   border: 1px solid #ee3643;
+}
+
+.pagination_list .pagination_item_current {
+  background-color: #ee3643;
+  color: #ffffff;
 }
 
 .rotary_hammer_information {
