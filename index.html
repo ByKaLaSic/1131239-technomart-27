@@ -402,8 +402,10 @@
   </footer>
 
   <section class="help_window">
+    <div class="higher_help_window">
     <h2 class="visually_hidden">Если заблудился</h2>
     <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="inner_help_window">
       <p class="lost_item">
         <label for="lost_name">Ваше имя:</label>
         <input type="text" name="name" id="lost_name" placeholder="Имя Фамилия">
@@ -412,20 +414,26 @@
         <label for="lost_email">Ваш e-mail:</label>
         <input type="email" name="email" id="lost_email" placeholder="email@example.com">
       </p>
-      <p class="lost_item">
+    </div>
+      <p class="lost_item letter_text">
         <label for="lost_text">Текст письма:</label>
         <textarea name="text" id="lost_text" placeholder="В свободной форме"></textarea>
       </p>
-      <button type="submit">Отправить</button>
+    </div>
+      <div class="lower_help_window">
+      <button class="button" type="submit">Отправить</button>
+    </div>
     </form>
-    <button type="button" aria-label="Закрыть"></button>
+    <button class="close_button" type="button" aria-label="Закрыть"></button>
   </section>
 
   <section class="big_map">
     <h2 class='visually_hidden'>Как до нас добраться</h2>
+    <div class="card_wrapper">
     <img width="970" height="476" src="img/png/big_map.png"
       alt="Большая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-    <button type="button" aria-label="Закрыть"></button>
+    </div>
+    <button class="close_button" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 

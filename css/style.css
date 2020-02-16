@@ -1187,6 +1187,8 @@ input.search::placeholder {
   padding-bottom: 9px;
   display: block;
   border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .button:hover {
@@ -2197,7 +2199,178 @@ left: -8px;
   padding-right: 2px;
 }
 
+.help_window {
+  position: relative;
+  position: absolute;
+  width: 620px;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5358;
+  box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
+  top: 2520px;
+  left: 642px;
+  padding-top: 29px;
+  z-index: 20;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
+.higher_help_window {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.lower_help_window {
+  background-color: #f4f4f4;
+  margin-top: 37px;
+  min-height: 112px;
+  border-top: 1px solid transparent;
+}
+
+.close_button {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  background-image: url("../img/svg/close.svg");
+  border: none;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+}
+
+.lost_item label {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+
+.inner_help_window {
+  display: flex;
+}
+
+.inner_help_window input {
+  width: 220px;
+  padding-top: 4px;
+}
+
+.inner_help_window input,
+.help_window textarea {
+  padding-bottom: 6px;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.help_window input::placeholder,
+.help_window textarea::placeholder {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #a9a9a9;
+}
+
+.inner_help_window input:first-of-type {
+  margin-right: 20px;
+}
+
+.help_window input,
+.help_window textarea {
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  font: inherit;
+}
+
+.help_window p {
+  display: flex;
+  flex-direction: column;
+}
+
+.letter_text {
+  margin-top: 3px;
+}
+
+.help_window textarea {
+  padding-top: 8px;
+  padding-bottom: 54px;;
+  resize: none;
+}
+
+.help_window .button {
+  width: 460px;
+  margin-left: 80px;
+  margin-top: 36px;
+  margin-bottom: 37px;
+}
+
+.big_map {
+  position: relative;
+  position: absolute;
+  width: 970px;
+  height: 476px;
+  top: 2333px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.big_map .close_button {
+  top: 24px;
+  right: 24px;
+}
+
+.card_wrapper {
+  width: 970px;
+  height: 476px;
+}
+
+.successfully {
+  top: 411px;
+  border-top-color: #ee3643;
+  position: relative;
+  position: absolute;
+}
+
+.successfully .higher_help_window {
+  padding-top: 36px;
+  padding-left: 180px;
+  margin-bottom: 68px;
+}
+
+.successfully h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  position: relative;
+}
+
+.successfully h2::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/svg/mark.svg");
+  width: 66px;
+  height: 66px;
+  left: -99px;
+  top: -17px;
+}
+
+.successfully .lower_help_window {
+  display: flex;
+  padding-right: 80px;
+  padding-left: 80px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.successfully .button {
+  margin-left: 0;
+  width: 220px;
+  padding-left: 9px;
+}
+
+.successfully .button_white {
+  background-color: #ffffff;
+  color: #000000;
+}
 
 
 
