@@ -274,6 +274,7 @@ input.search::placeholder {
 .location_header .main_tel::before {
   content: "";
   background-image: url("../img/svg/icon_phone.svg");
+  background-repeat: no-repeat;
   position: absolute;
   top: 10px;
   left: 12px;
@@ -693,11 +694,13 @@ input.search::placeholder {
 .left_button {
   left: 25px;
   background-image: url(../img/svg/icon_left.svg);
+  background-repeat: no-repeat;
 }
 
 .right_button {
   right: 20px;
   background-image: url(../img/svg/icon_right.svg);
+  background-repeat: no-repeat;
 }
 
 .promo .button {
@@ -705,7 +708,7 @@ input.search::placeholder {
   bottom: 22px;
   left: 25px;
   width: 195px;
-  padding-left: 3px;
+  padding-left: 13px;
 }
 
 .drill h3,
@@ -1710,11 +1713,13 @@ input.search::placeholder {
   background-image: url("../img/svg/radio_on_normal.svg");
 }
 
-.filter_input[type="radio"]:hover + label::before {
+.filter_input[type="radio"]:hover + label::before,
+.filter_input[type="radio"]:focus + label::before {
   background-image: url("../img/svg/radio_off_hover.svg");
 }
 
-.filter_input[type="radio"]:checked:hover + label::before {
+.filter_input[type="radio"]:checked:hover + label::before,
+.filter_input[type="radio"]:checked:focus + label::before {
   background-image: url("../img/svg/radio_on_hover.svg");
 }
 
@@ -1766,11 +1771,13 @@ input.search::placeholder {
   margin-left: -25px;
 }
 
-.filter_input[type="checkbox"]:hover + label::before {
+.filter_input[type="checkbox"]:hover + label::before,
+.filter_input[type="checkbox"]:focus + label::before {
   background-image: url("../img/svg/checkbox_off_hover.svg");
 }
 
-.filter_input[type="checkbox"]:checked:hover + label::before {
+.filter_input[type="checkbox"]:checked:hover + label::before,
+.filter_input[type="checkbox"]:checked:focus + label::before {
   background-image: url("../img/svg/checkbox_on_hover.svg");
 }
 
@@ -2200,18 +2207,17 @@ left: -8px;
 }
 
 .help_window {
-  position: relative;
-  position: absolute;
+  position: fixed;
   width: 620px;
   background-color: #ffffff;
   border-top: 7px solid #ff5358;
   box-shadow: 0 20px 40px 0px rgba(0, 0, 0, 0.75);
-  top: 2520px;
-  left: 642px;
-  padding-top: 29px;
-  z-index: 20;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  padding-top: 29px;
+  z-index: 40;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .higher_help_window {
@@ -2235,6 +2241,7 @@ left: -8px;
   width: 21px;
   height: 21px;
   background-color: transparent;
+  background-repeat: no-repeat;
 }
 
 .lost_item label {
@@ -2257,6 +2264,16 @@ left: -8px;
   padding-bottom: 6px;
   padding-left: 13px;
   padding-right: 13px;
+}
+
+.inner_help_window input:hover,
+.help_window textarea:hover {
+  border-color: #b5b5b5;
+}
+
+.inner_help_window input:focus,
+.help_window textarea:focus {
+  border-color: #ee3643;
 }
 
 .help_window input::placeholder,
@@ -2301,14 +2318,13 @@ left: -8px;
 }
 
 .big_map {
-  position: relative;
   position: absolute;
   width: 970px;
   height: 476px;
-  top: 2333px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+  transform: translate(-50%, 50%);
+  z-index: 30;
 }
 
 .big_map .close_button {
@@ -2322,10 +2338,8 @@ left: -8px;
 }
 
 .successfully {
-  top: 411px;
   border-top-color: #ee3643;
-  position: relative;
-  position: absolute;
+  position: fixed;
 }
 
 .successfully .higher_help_window {
@@ -2370,6 +2384,15 @@ left: -8px;
 .successfully .button_white {
   background-color: #ffffff;
   color: #000000;
+}
+
+.successfully .button_white:hover,
+.successfully .button_white:focus {
+  background-color: #e4e4e4;
+}
+
+.successfully .button_white:active {
+  background-color: #e7e7e7;
 }
 
 
