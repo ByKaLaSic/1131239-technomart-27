@@ -17,6 +17,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  min-width: 960px;
 }
 
 a {
@@ -44,7 +45,7 @@ img {
   line-height: 18px;
   width: 150px;
   padding-top: 12px;
-  padding-bottom: 11px;
+  padding-bottom: 12px;
 }
 
 .header_logo {
@@ -96,7 +97,8 @@ input.search {
   color: #ffffff;
   width: 270px;
   padding-left: 48px;
-  min-height: 42px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font: inherit;
 }
 
@@ -122,11 +124,13 @@ input.search::placeholder {
 .bookmarks {
   padding-left: 44px;
   position: relative;
+  padding-right: 10px;
 }
 
 .basket {
   padding-left: 49px;
   position: relative;
+  padding-right: 10px;
 }
 
 .basket svg {
@@ -198,6 +202,7 @@ input.search::placeholder {
 .order {
   background-color: #63a63e;
   padding-left: 20px;
+  padding-right: 10px;
 }
 
 .order:hover,
@@ -269,6 +274,7 @@ input.search::placeholder {
   padding-left: 71px;
   padding-bottom: 9px;
   position: relative;
+  padding-right: 10px;
 }
 
 .location_header .main_tel::before {
@@ -335,12 +341,14 @@ input.search::placeholder {
   width: 150px;
   padding-left: 24px;
   padding-top: 12px;
+  padding-right: 10px;
 }
 
 .user_unregistered .entrance {
   width: 121px;
   padding-top: 12px;
   padding-left: 47px;
+  padding-right: 10px;
   position: relative;
 }
 
@@ -587,6 +595,8 @@ input.search::placeholder {
   padding-bottom: 9px;
   border-radius: 2px;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .promo_card a:hover,
@@ -783,6 +793,7 @@ input.search::placeholder {
   padding-bottom: 29px;
   padding-left: 28px;
   font-weight: 400;
+  padding-right: 20px;
 }
 
 .popular_goods ul {
@@ -1496,6 +1507,7 @@ input.search::placeholder {
   padding-top: 30px;
   font-weight: 400;
   padding-left: 28px;
+  padding-right: 28px;
   padding-bottom: 29px;
 }
 
@@ -1575,6 +1587,7 @@ input.search::placeholder {
   width: 700px;
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .sorting ul {
@@ -1585,12 +1598,16 @@ input.search::placeholder {
 }
 
 .sorting .sorting_main {
-  margin-right: 46px;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 6px;
+  justify-content: flex-start;
+  width: 420px;
 }
 
 .sorting_arrows {
   width: 43px;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -1614,10 +1631,6 @@ input.search::placeholder {
   fill: #ee3643;
 }
 
-.sorting_main li:not(:nth-child(1)) {
-  margin-left: 68px;
-}
-
 .sorting h2,
 .sorting a{
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1629,11 +1642,17 @@ input.search::placeholder {
 .sorting h2 {
   margin: 0;
   padding: 0;
-  margin-left: 19px;
-  margin-right: 140px;
+  padding-left: 19px;
+  padding-right: 20px;
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 220px;
+}
+
+.sorting_main li {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .sorting_main a {
@@ -1650,6 +1669,15 @@ input.search::placeholder {
 .sorting_main a:active {
   color: #ee3643;
   border-bottom: none;
+}
+
+.sorting .sorting_type {
+  margin-left: 30px;
+}
+
+.sorting .by_functionality {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .filter {
@@ -1742,6 +1770,7 @@ input.search::placeholder {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 19px;
+  padding-right: 19px;
 }
 
 .filter_interval input{
@@ -1861,7 +1890,8 @@ input.search::placeholder {
   position: absolute;
   width: 20px;
   height: 22px;
-  background-image: url("../img/png/filter-button.png");
+  background-image: url("../img/svg/filter-button.svg");
+  background-repeat: repeat;
   background-color: #f7f3ec;
   top: -9px;
 }
@@ -2171,6 +2201,7 @@ left: -8px;
 .pagination_list .pagination_item_current {
   background-color: #ee3643;
   color: #ffffff;
+  border-radius: 3px;
 }
 
 .rotary_hammer_information {
@@ -2218,6 +2249,7 @@ left: -8px;
   z-index: 40;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }
 
 .higher_help_window {
@@ -2325,6 +2357,7 @@ left: -8px;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 30;
+  display: none;
 }
 
 .big_map .close_button {
