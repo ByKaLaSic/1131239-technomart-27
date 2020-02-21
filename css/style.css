@@ -2203,8 +2203,8 @@ left: -8px;
 .lower_help_window {
   background-color: #f4f4f4;
   margin-top: 37px;
-  min-height: 112px;
   border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .close_button {
@@ -2236,6 +2236,7 @@ left: -8px;
 
 .inner_help_window input,
 .help_window textarea {
+  font: inherit;
   padding-bottom: 6px;
   padding-left: 13px;
   padding-right: 13px;
@@ -2253,6 +2254,7 @@ left: -8px;
 
 .help_window input::placeholder,
 .help_window textarea::placeholder {
+  font: inherit;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2371,8 +2373,55 @@ left: -8px;
   background-color: #e7e7e7;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
 
+  70% {
+    transform: translateY(30px);
+  }
 
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal_show {
+  display: block;
+  animation: bounce 0.6s;
+
+}
+
+.modal_error {
+  animation: shake 0.6s;
+}
 
 
 
