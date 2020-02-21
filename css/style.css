@@ -99,6 +99,7 @@ input.search {
   padding-left: 48px;
   padding-top: 9px;
   padding-bottom: 9px;
+  min-height: 42px;
   font: inherit;
 }
 
@@ -496,43 +497,7 @@ input.search::placeholder {
   font-size: 17px;
   line-height: 17px;
   display: block;
-  padding: 0 20px;
-  padding-top: 20px;
-  padding-bottom: 18px;
-}
-
-.header_nav .link_home {
-  padding-left: 52px;
-  padding-right: 34px;
-}
-
-.header_nav .link_company {
-  padding-left: 30px;
-  padding-right: 31px;
-}
-
-.header_nav .link_catalog {
-  padding-left: 28px;
-  padding-right: 32px
-}
-
-.header_nav .link_news {
-  padding-left: 27px;
-  padding-right: 32px;
-}
-
-.header_nav .link_special_offers {
-  padding-left: 28px;
-  padding-right: 30px;
-}
-
-.header_nav .link_delivery {
-  padding-left: 32px;
-}
-
-.header_nav .link_contacts {
-  padding-left: 43px;
-  padding-right: 53px;
+  padding: 20px 31px 18px 30px;
 }
 
 .header_nav a:hover,
@@ -558,9 +523,8 @@ input.search::placeholder {
 
 .promo_card {
   width: 300px;
-  margin-right: 20px;
   margin-bottom: 20px;
-  height: 123px;
+  min-height: 123px;
   position: relative;
 }
 
@@ -618,6 +582,7 @@ input.search::placeholder {
   top: 31px;
   right: 43px;
   background-image: url(../img/png/icon_1.png);
+  background-repeat: no-repeat;
 }
 
 .tool {
@@ -626,6 +591,7 @@ input.search::placeholder {
 
 .tool::after {
   background-image: url(../img/png/icon_2.png);
+  background-repeat: no-repeat;
   width: 75px;
   height: 61px;
   top: 33px;
@@ -642,6 +608,7 @@ input.search::placeholder {
 
 .equipment::after {
   background-image: url(../img/png/icon_3.png);
+  background-repeat: no-repeat;
   height: 62px;
   width: 78px;
   right: 31px;
@@ -666,12 +633,16 @@ input.search::placeholder {
 .inner_left_promo {
   display: flex;
   flex-wrap: wrap;
+  width: 620px;
+  justify-content: space-between;
 }
 
 .inner_right_promo {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 300px;
+  margin-left: auto;
 }
 
 .inner_right_promo a {
@@ -750,6 +721,7 @@ input.search::placeholder {
 
 .discounts::after {
   background-image: url("../img/png/icon_4.png");
+  background-repeat: no-repeat;
   width: 59px;
   height: 72px;
   right: 45px;
@@ -762,6 +734,7 @@ input.search::placeholder {
 
 .delivery::after {
   background-image: url("../img/png/icon_5.png");
+  background-repeat: no-repeat;
   height: 63px;
   width: 78px;
   right: 31px;
@@ -1128,7 +1101,7 @@ input.search::placeholder {
 .virtues .button {
   margin-top: 36px;
   width: 220px;
-  padding-left: 2px;
+  padding-left: 12px;
 }
 
 .contacts {
@@ -1149,7 +1122,7 @@ input.search::placeholder {
 }
 
 .contacts .button {
-  padding-left: 6px;
+  padding-left: 16px;
 }
 
 .virtues_list {
@@ -1280,35 +1253,17 @@ input.search::placeholder {
   padding: 0;
   display: flex;
   margin-top: 38px;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .first_links a {
   color: #f1f5f7;
-  padding: 0 20px;
   display: block;
-}
-
-.first_links .first_links_company {
-  padding-left: 3px;
-}
-
-.first_links .first_links_news {
-  padding-left: 39px;
-}
-
-.first_links .first_links_catalog {
-  padding-left: 38px;
-}
-
-.first_links .first_linksdelivery {
-  padding-left: 41px;
-}
-
-.first_links .first_links_contacts {
-  padding-right: 0px;
-  padding-left: 37px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .second_links {
@@ -1316,31 +1271,15 @@ input.search::placeholder {
   padding: 0;
   display: flex;
   margin-top: 34px;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  width: 527px;
+  margin-left: auto;
 }
 
 .second_links a {
   color: #ffd180;
-  margin: 0 20px;
   display: block;
-}
-
-.second_links .second_links_materials {
-  padding-left: 6px;
-}
-
-.second_links .second_links_equipment {
-  padding-left: 20px;
-}
-
-.second_links .second_links_tool {
-  padding-left: 19px;
-}
-
-.second_links .second_links_special_offers {
-  margin-right: 0;
-  padding-left: 19px;
 }
 
 .first_links a:hover,
@@ -1907,8 +1846,9 @@ left: -8px;
 .filter_interval {
   width: 220px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: relative;
+
 }
 
 .filter_interval::after {
@@ -1947,6 +1887,7 @@ left: -8px;
 
 .max_interval {
   padding-left: 2px;
+  margin-left: auto;
 }
 
 .hammer_drill_list {
@@ -2085,6 +2026,8 @@ left: -8px;
   padding-top: 43px;
   padding-bottom: 40px;
   z-index: 10;
+  top: 0;
+  left: 1px;
 }
 
 .drop_price a {
