@@ -2190,7 +2190,6 @@ left: -8px;
   left: 50%;
   padding-top: 29px;
   z-index: 40;
-  left: 50%;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -2217,6 +2216,7 @@ left: -8px;
   height: 21px;
   background-color: transparent;
   background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .lost_item label {
@@ -2295,24 +2295,37 @@ left: -8px;
 }
 
 .big_map {
-  position: absolute;
-  width: 970px;
-  height: 476px;
+  position: fixed;
+  width: 940px;
+  height: 446px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 50%);
+  transform: translate(-50%, -50%);
   z-index: 30;
   display: none;
+  box-shadow: 0 0px 16px 8px rgba(47, 42, 43, 0.5);
 }
 
 .big_map .close_button {
-  top: 24px;
-  right: 24px;
+  top: 9px;
+  right: 9px;
+}
+
+.big_map iframe {
+  width: 940px;
+  height: 446px;
+  position: relative;
+  z-index: 2;
+  border: none;
 }
 
 .card_wrapper {
-  width: 970px;
-  height: 476px;
+  width: 940px;
+  height: 446px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .successfully {
