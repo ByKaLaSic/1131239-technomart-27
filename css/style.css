@@ -660,7 +660,8 @@ input.search::placeholder {
   position: relative;
 }
 
-.promo_slider button {
+.promo_slider .left_button,
+.promo_slider .right_button {
   position: absolute;
   width: 22px;
   height: 40px;
@@ -673,35 +674,8 @@ input.search::placeholder {
   fill: #ffffff;
 }
 
-.points {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 160px;
-  bottom: 36px;
-  left: 230px;
-}
-
-.points .point_item {
-  width: 10px;
-  height: 10px;
-  background-image: url(../img/png/slider_dots.png);
-  background-repeat: no-repeat;
-  margin: 0 5px;
-  position: relative;
-}
-
-.point_item.point_current::before {
-  content: "";
-  width: 6px;
-  height: 6px;
+.point_item.point_current {
   background-color: #ee3643;
-  position: absolute;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .left_button {
@@ -722,6 +696,31 @@ input.search::placeholder {
   left: 25px;
   width: 195px;
   padding-left: 13px;
+}
+
+.promo_slider .points {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 160px;
+  bottom: 36px;
+  left: 230px;
+}
+
+.points .point_item {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  margin: 0 5px;
+}
+
+.point_item.point_current {
+  background-color: #ee3643;
 }
 
 .drill h3,
