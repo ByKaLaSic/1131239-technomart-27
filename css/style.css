@@ -100,8 +100,7 @@ input.search {
   padding-top: 9px;
   padding-bottom: 9px;
   min-height: 42px;
-  font-size: 17px;
-  line-height: 18px;
+  font: inherit;
 }
 
 input.search:hover {
@@ -671,37 +670,6 @@ input.search::placeholder {
 
 .promo_slider path {
   fill: #ffffff;
-}
-
-.points {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 160px;
-  bottom: 36px;
-  left: 230px;
-}
-
-.points .point_item {
-  width: 10px;
-  height: 10px;
-  background-image: url(../img/png/slider_dots.png);
-  background-repeat: no-repeat;
-  margin: 0 5px;
-  position: relative;
-}
-
-.point_item.point_current::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #ee3643;
-  position: absolute;
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .left_button {
@@ -1742,7 +1710,6 @@ input.search::placeholder {
   padding-bottom: 10px;
   padding-left: 19px;
   padding-right: 19px;
-  font-weight: 400;
 }
 
 .filter_interval input{
@@ -1981,7 +1948,7 @@ left: -8px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  line-height: 18px;
+  line-height: 17px;
   font-size: 17px;
   display: block;
 }
@@ -1989,9 +1956,9 @@ left: -8px;
 .old_price {
   color: #999999;
   order: 2;
-  margin-top: 11px;
+  margin-top: 12px;
   margin-left: 2px;
-  min-height: 18px;
+  min-height: 17px;
   text-decoration: line-through;
 }
 
@@ -1999,6 +1966,7 @@ left: -8px;
   position: absolute;
   top: -1px;
   right: -1px;
+
   width: 60px;
   height: 60px;
   text-indent: -1000px;
@@ -2025,7 +1993,7 @@ left: -8px;
   margin-left: 8px;
   border-radius: 3px;
   position: relative;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   padding-right: 30px;
   padding-left: 35px;
@@ -2072,21 +2040,16 @@ left: -8px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  padding-right: 5px;
 }
 
 .drop_price .buy {
   background-color: #63a63e;
   color: #ffffff;
   border-bottom: 3px solid #367315;
-  padding-top: 11px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 7px;
   margin-bottom: 8px;
   position: relative;
-  padding-left: 5px;
-  text-align: left;
-  text-indent: 44px;
 }
 
 .buy svg {
@@ -2109,9 +2072,8 @@ left: -8px;
   background-color: #ffffff;
   color: #32425c;
   border: 3px solid #63a63e;
-  padding-top: 8px;
-  padding-bottom: 6px;
-  padding-left: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .drop_price .to_bookmarks:hover,
@@ -2168,7 +2130,6 @@ left: -8px;
 
 .pagination_list .further {
   width: 140px;
-  text-transform: uppercase;
 }
 
 .pagination_list a:hover:not(.pagination_item_current),
@@ -2276,8 +2237,7 @@ left: -8px;
 .inner_help_window input,
 .help_window textarea {
   font: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-bottom: 6px;
   padding-left: 13px;
   padding-right: 13px;
 }
@@ -2310,9 +2270,6 @@ left: -8px;
   border: 2px solid #dee3e4;
   border-radius: 3px;
   font: inherit;
-  font-size: 13px;
-  line-height: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .help_window p {
@@ -2326,7 +2283,7 @@ left: -8px;
 
 .help_window textarea {
   padding-top: 8px;
-  padding-bottom: 66px;;
+  padding-bottom: 54px;;
   resize: none;
 }
 
@@ -2334,7 +2291,7 @@ left: -8px;
   width: 460px;
   margin-left: 80px;
   margin-top: 36px;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 }
 
 .big_map {
@@ -2359,7 +2316,7 @@ left: -8px;
   height: 446px;
   position: relative;
   z-index: 2;
-  border: 0;
+  border: none;
 }
 
 .card_wrapper {

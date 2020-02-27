@@ -6,7 +6,8 @@ var linkMap = document.querySelector(".little_map");
 var map = document.querySelector(".big_map");
 
 if (linkMap) {
-  linkMap.addEventListener("click", function () {
+  linkMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
     map.classList.add("modal_show");
   });
 };
