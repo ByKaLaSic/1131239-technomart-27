@@ -8,7 +8,7 @@
     href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/min_style.css">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
           <img width="109" height="19" src="img/png/logo_header.png" alt="Логотип техномарта">
         </a>
         <form class="form_search" action="https://echo.htmlacademy.ru" method="get">
-          <input class="search" type="search" placeholder="Поиск:">
+          <input class="search" type="search" placeholder="Поиск:" aria-label="Поиск:">
           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" /></svg>
         </form>
         <a class="bookmarks" href="#">
@@ -50,7 +50,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17"><path fill="#32425C" d="M14.875 8.5L6 0v6H0v5h6v6z" /><path fill="#32425C" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" /></svg>
               Войти
             </a>
-            <a class="registration" href="registration.html">Регистрация</a>
+            <a class="registration" href="registration.html">Регистраци</a>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           </div>
 
           <div class="promo_slider">
-            <div class="drill">
+            <div class="drill slider_item">
               <h3>Дрели</h3>
               <div class="drill_photo">
                 <img width="620" height="266" src="img/jpg/drill_photo_1.jpg" alt="фото работника с дрелью">
@@ -93,7 +93,7 @@
               <p>Соседям на радость!</p>
               <a class="button" href="catalog.html">Открыть каталог</a>
             </div>
-            <div class="hammer_drill">
+            <div class="hammer_drill slider_item inactive">
               <h3>Перфораторы</h3>
               <div class="hammer_drill_photo">
                 <img width="620" height="266" src="img/jpg/drill_photo_2.jpg" alt="фото работника с перфоратором">
@@ -145,7 +145,7 @@
                 alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
             </div>
             <div class="drop_price">
-              <a class="buy" href="#">
+              <a class="buy" href="buy.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" /><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" /><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
                 Купить
               </a>
@@ -169,7 +169,7 @@
                 alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Средней мощности">
             </div>
             <div class="drop_price">
-              <a class="buy" href="#">
+              <a class="buy" href="buy.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" /><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" /><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
                 Купить
               </a>
@@ -193,7 +193,7 @@
                 alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Мощный">
             </div>
             <div class="drop_price">
-              <a class="buy" href="#">
+              <a class="buy" href="buy.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" /><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" /><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
                 Купить
               </a>
@@ -218,7 +218,7 @@
                 alt="Фото перфоратора с коротким наконечником. Цвета перфоратора: синий, чёрный. Низкой мощности">
             </div>
             <div class="drop_price">
-              <a class="buy" href="#">
+              <a class="buy" href="buy.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" /><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" /><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" /></svg>
                 Купить
               </a>
@@ -336,7 +336,7 @@
             <img width="300" height="158" src="img/jpg/map.jpg"
               alt="Маленькая карта офиса компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </a>
-          <a class="button link" href="#">Заблудились? Напишите нам!</a>
+          <a class="button link" href="letter.html">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </div>
@@ -413,16 +413,16 @@
         <div class="inner_help_window">
           <p class="lost_item">
             <label for="lost_name">Ваше имя:</label>
-            <input type="text" name="name" id="lost_name" placeholder="Имя Фамилия">
+            <input type="text" name="name" id="lost_name" placeholder="Имя Фамилия" aria-label="Имя Фамилия">
           </p>
           <p class="lost_item">
             <label for="lost_email">Ваш e-mail:</label>
-            <input type="email" name="email" id="lost_email" placeholder="email@example.com">
+            <input type="email" name="email" id="lost_email" placeholder="email@example.com" aria-label="email@example.com">
           </p>
         </div>
         <p class="lost_item letter_text">
           <label for="lost_text">Текст письма:</label>
-          <textarea name="text" id="lost_text" placeholder="В свободной форме"></textarea>
+          <textarea name="text" id="lost_text" placeholder="В свободной форме" aria-label="В свободной форме"></textarea>
         </p>
       </div>
       <div class="lower_help_window">

@@ -224,7 +224,7 @@ input.search::placeholder {
 
 .main_header {
   background-color: #f3f7f9;
-  background-image: url(../img/jpg/top_background.jpg);
+  background-image: url("../img/jpg/top_background.jpg");
   background-repeat: no-repeat;
   margin-bottom: 59px;
   min-height: 320px;
@@ -304,9 +304,9 @@ input.search::placeholder {
 }
 
 .user_unregistered {
-  width: 281px;
   display: flex;
   margin-left: 69px;
+  width: 281px;
 }
 
 .user_unregistered svg {
@@ -340,18 +340,18 @@ input.search::placeholder {
 
 .user_unregistered .registration {
   margin-left: 10px;
-  width: 150px;
   padding-left: 24px;
   padding-top: 12px;
   padding-right: 10px;
+  width: 150px;
 }
 
 .user_unregistered .entrance {
-  width: 121px;
   padding-top: 12px;
   padding-left: 47px;
   padding-right: 10px;
   position: relative;
+  width: 121px;
 }
 
 .user_registered {
@@ -490,6 +490,7 @@ input.search::placeholder {
   margin-bottom: 59px;
   border-bottom: 5px solid #293449;
   background-color: #32425c;
+  min-height: 60px;
 }
 
 .header_nav a {
@@ -582,7 +583,7 @@ input.search::placeholder {
   height: 65px;
   top: 31px;
   right: 43px;
-  background-image: url(../img/png/icon_1.png);
+  background-image: url("../img/png/icon_1.png");
   background-repeat: no-repeat;
 }
 
@@ -591,7 +592,7 @@ input.search::placeholder {
 }
 
 .tool::after {
-  background-image: url(../img/png/icon_2.png);
+  background-image: url("../img/png/icon_2.png");
   background-repeat: no-repeat;
   width: 75px;
   height: 61px;
@@ -608,7 +609,7 @@ input.search::placeholder {
 }
 
 .equipment::after {
-  background-image: url(../img/png/icon_3.png);
+  background-image: url("../img/png/icon_3.png");
   background-repeat: no-repeat;
   height: 62px;
   width: 78px;
@@ -627,7 +628,7 @@ input.search::placeholder {
   width: 620px;
 }
 
-.hammer_drill {
+.inactive {
   display: none;
 }
 
@@ -680,13 +681,13 @@ input.search::placeholder {
 
 .left_button {
   left: 25px;
-  background-image: url(../img/svg/icon_left.svg);
+  background-image: url("../img/svg/icon_left.svg");
   background-repeat: no-repeat;
 }
 
 .right_button {
   right: 20px;
-  background-image: url(../img/svg/icon_right.svg);
+  background-image: url("../img/svg/icon_right.svg");
   background-repeat: no-repeat;
 }
 
@@ -864,6 +865,7 @@ input.search::placeholder {
 
 .logotype a:active {
   box-shadow: 0 4px 10px 0px rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 .bosch {
@@ -1008,7 +1010,7 @@ input.search::placeholder {
   content: "";
   width: 468px;
   height: 261px;
-  background-image: url(../img/png/photo_service_1.png);
+  background-image: url("../img/png/photo_service_1.png");
   position: absolute;
   right: -342px;
   top: 23px;
@@ -1035,7 +1037,7 @@ input.search::placeholder {
   position: absolute;
   width: 389px;
   height: 283px;
-  background-image: url(../img/png/photo_service_2.png);
+  background-image: url("../img/png/photo_service_2.png");
   top: -4px;
   right: -253px;
 }
@@ -1058,7 +1060,7 @@ input.search::placeholder {
   position: absolute;
   width: 465px;
   height: 285px;
-  background-image: url(../img/png/photo_service_3.png);
+  background-image: url("../img/png/photo_service_3.png");
   top: -7px;
   right: -352px;
 }
@@ -1597,7 +1599,15 @@ input.search::placeholder {
   fill: #231f20;
 }
 
+.sorting_arrows_current path:hover {
+  fill: #ee3643;
+}
+
 .sorting_arrows path:active {
+  fill: #ee3643;
+}
+
+.sorting_arrows_current path{
   fill: #ee3643;
 }
 
@@ -1636,9 +1646,19 @@ input.search::placeholder {
   border-bottom: 1px solid #ee3643;
 }
 
+.sorting .sorting_main_current:hover {
+  color: #ee3643;
+  border: none;
+}
+
 .sorting_main a:active {
   color: #ee3643;
   border-bottom: none;
+}
+
+.sorting .sorting_main_current {
+  color: #ee3643;
+  border: none;
 }
 
 .sorting .sorting_type {
@@ -2151,12 +2171,14 @@ left: -8px;
   line-height: 18px;
   margin-right: 10px;
   display: block;
-  width: 38px;
-  height: 38px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 9px;
+  min-width: 38px;
+  min-height: 38px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 10px;
   color: #000000;
 }
@@ -2187,7 +2209,7 @@ left: -8px;
 
 .rotary_hammer_information {
   background-color: #f3f7f9;
-  background-image: url(../img/jpg/top_background.jpg);
+  background-image: url("../img/jpg/top_background.jpg");
   background-repeat: no-repeat;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
@@ -2312,6 +2334,7 @@ left: -8px;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
+  outline: none;
 }
 
 .help_window p {
@@ -2325,7 +2348,7 @@ left: -8px;
 
 .help_window textarea {
   padding-top: 8px;
-  padding-bottom: 66px;;
+  min-height: 114px;
   resize: none;
 }
 

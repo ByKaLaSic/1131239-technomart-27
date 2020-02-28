@@ -4,9 +4,14 @@ var successfully = document.querySelector(".successfully");
 var closeSuccessfully = successfully.querySelector(".close_button");
 var linkMap = document.querySelector(".little_map");
 var map = document.querySelector(".big_map");
+var isStorageSupport = true;
+var storage_1 = "";
+var storage_2 = "";
+var purchases = document.querySelectorAll(".buy");
 
 if (linkMap) {
-  linkMap.addEventListener("click", function () {
+  linkMap.addEventListener("click", function (evt) {
+    evt.preventDefault();
     map.classList.add("modal_show");
   });
 };
@@ -22,11 +27,6 @@ if (popup) {
 if (map) {
   var closeMap = map.querySelector(".close_button")
 }
-
-var isStorageSupport = true;
-var storage_1 = "";
-var storage_2 = "";
-var purchases = document.querySelectorAll(".buy");
 
 try {
   storage_1 = localStorage.getItem("moniker");
@@ -103,15 +103,21 @@ if (form) {
   });
 };
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal_show")) {
-      popup.classList.remove("modal_show");
-      popup.classList.remove("modal_error");
-    } else {
-      if (successfully.classList.contains("modal_show"))
-        successfully.classList.remove("modal_show");
+
+if (window) {
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal_show")) {
+        popup.classList.remove("modal_show");
+        popup.classList.remove("modal_error");
+      } else
+        if (successfully.classList.contains("modal_show")) {
+          successfully.classList.remove("modal_show");
+        } else
+          if (map.classList.contains("modal_show")) {
+            map.classList.remove("modal_show");
+          }
     }
-  }
-});
+  })
+};
