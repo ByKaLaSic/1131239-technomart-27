@@ -103,21 +103,21 @@ if (form) {
   });
 };
 
-
-if (window) {
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal_show")) {
-        popup.classList.remove("modal_show");
-        popup.classList.remove("modal_error");
-      } else
-        if (successfully.classList.contains("modal_show")) {
-          successfully.classList.remove("modal_show");
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (successfully.classList.contains("modal_show")) {
+      successfully.classList.remove("modal_show");
+    } else
+      if (popup) {
+        if (popup.classList.contains("modal_show")) {
+          popup.classList.remove("modal_show");
+          popup.classList.remove("modal_error");
         } else
           if (map.classList.contains("modal_show")) {
             map.classList.remove("modal_show");
           }
-    }
-  })
-};
+      }
+  }
+});
+
