@@ -1898,7 +1898,6 @@ left: -8px;
 .filter_interval {
   width: 220px;
   display: flex;
-  /* justify-content: space-between; */
   position: relative;
 
 }
@@ -2470,26 +2469,26 @@ left: -8px;
   }
 
   @keyframes shake {
-    0%,
-    100% {
-    transform: translate(-50%, -50%);
-    }
+  0%,
+  100% {
+  transform: translate(-50%, -50%);
+  }
 
-    10%,
-    30%,
-    50%,
-    70%,
-    90% {
-    transform: translate(calc(-50% - 10px), -50%);
-    }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+  transform: translate(calc(-50% - 10px), -50%);
+  }
 
-    20%,
-    40%,
-    60%,
-    80% {
-    transform: translate(calc(-50% + 10px), -50%);
-    }
-    }
+  20%,
+  40%,
+  60%,
+  80% {
+  transform: translate(calc(-50% + 10px), -50%);
+  }
+  }
 
 .modal_show {
   display: block;

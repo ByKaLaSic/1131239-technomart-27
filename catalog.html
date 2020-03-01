@@ -50,7 +50,7 @@
           и&nbsp;инструментов для ремонта
         </p>
         <div class="location_header">
-          <p class="main_tel catalog_tel"><a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+          <p class="main_tel catalog_tel"><a href="tel:+78125550555" aria-label="Главный номер техномарта">+7 (812) 555-05-55</a></p>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="user_registered">
@@ -62,7 +62,7 @@
                 </svg>
               Равшан Джамшутович
             </a>
-            <a class="exit" href="#">
+            <a class="exit" href="#" aria-label="Кнопка выхода со страницы">
               <svg class="user" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                 <g fill="#c5c5c5">
                   <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
@@ -123,8 +123,8 @@
                 <div class="filter_range_wrapper">
                   <div class="filter_range">
                     <div class="filter_range_scale">
-                      <button type="button" class="filter_range_handle min"></button>
-                      <button type="button" class="filter_range_handle max"></button>
+                      <button aria-label="Кнопка, которая может двигаться влево, вправо и показывать минимальный диапозон цены" type="button" class="filter_range_handle min"></button>
+                      <button aria-label="Кнопка, которая может двигаться влево, вправо и показывать максимальный диапозон цены" type="button" class="filter_range_handle max"></button>
                     </div>
                   </div>
                 </div>
@@ -447,10 +447,13 @@
             </li>
           </ul>
           <ul class="pagination_list">
-            <li><a class="pagination_item_current">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a class="further" href="#">Следующая</a></li>
+            <h2 class="visually_hidden">Нумерация страниц</h2>
+            <li><a class="pagination_item_current" aria-label="Ссылка на страницу">1</a></li>
+            <li><a href="#" aria-label="Ссылка на страницу">2</a></li>
+            <li><a href="#" aria-label="Ссылка на страницу">3</a></li>
+            <li><a class="further" href="#" aria-label="Ссылка на страницу">
+              Следующая</a>
+            </li>
           </ul>
         </section>
       </div>
@@ -480,7 +483,7 @@
           </a>
           <p class="location_footer">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a href="tel:+78125550555" aria-label="Главный номер техномарта">+7 (812) 555-05-55</a>
           </p>
         </div>
         <nav class="footer_nav">
@@ -488,7 +491,7 @@
             <li><a class="first_links_company" href="company.html">Компания</a></li>
             <li><a class="first_links_news" href="news.html">Новости</a></li>
             <li><a class="first_links_catalog">Каталог</a></li>
-            <li><a class="first_linksdelivery" href="delivery.html">Доставка</a></li>
+            <li><a class="first_links_delivery" href="delivery.html">Доставка</a></li>
             <li><a class="first_links_contacts" href="contacts.html">Контакты</a></li>
           </ul>
           <ul class="second_links">
